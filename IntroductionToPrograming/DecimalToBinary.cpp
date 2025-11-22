@@ -1,30 +1,32 @@
-#include<iostream>
-#include<cmath>
+#include <iostream>
+#include <cmath>
 using namespace std;
 
-int decimalToBinary(int num){
+int decimalToBinary(int num)
+{
 
+    int res = 0;
+    int i = 0;
+    int rem = 0;
+    while (num > 0)
+    {
+        int rem = num % 2;
+        res = rem * pow(10, i) + res;
+        num = num / 2;
+        i++;
+    }
 
-int res=0;
-int i=0;
-int rem =0;
-while(num >0){    
-int rem = num%2;
-res = rem*pow(10,i)+ res;
-num=num/2;
-i++;
+    return res;
 }
 
-return res;
-}
+int main()
+{
 
-int main(){
+    int num;
+    cout << "Enter a Number: ";
+    cin >> num;
+    cout << endl;
 
-int num;
-cout<<"Enter a Number: ";
-cin>>num;
-cout<<endl;
-
-cout<<"the decimal Representation of the given number is:"<<decimalToBinary(num)<<endl;
-return 0;
+    cout << "the decimal Representation of the given number is:" << decimalToBinary(num) << endl;
+    return 0;
 }
