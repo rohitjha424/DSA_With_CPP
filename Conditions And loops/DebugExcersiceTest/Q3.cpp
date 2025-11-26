@@ -1,4 +1,4 @@
-//Debug the code. It is trying to print the given pattern.
+//3. Debug the code. It is trying to print the given pattern.
 
 /*
 Pattern
