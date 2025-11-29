@@ -13,23 +13,23 @@ int main(){
     int no;
     cin>>no;
     int i=1;
-    while(i<=(no)){
-        int n = 2*i-1;
-        int gaps = n-i,k=1;
+    int n = 2*no;
+    while(i<=no){
+        int gaps = n-2*i,k=1;
         int j = i;
-        while(k<=gaps){
+        while(k<=gaps/2){
             cout<<" ";
             k = k + 1;
         }
         int ch = n - gaps + 1, z = (ch+1)/2;
-        while(z<=1){
+        while(z>1){
             cout<<j;
             j = j + 1;
             z = z - 1;
         }
         j = j - 1;
         z = (ch-1)/2;
-        while(z>=1){
+        while(z>1){
             j = j - 1;
             cout<<j;
             z = z - 1;
