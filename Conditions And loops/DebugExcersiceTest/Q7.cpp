@@ -13,11 +13,11 @@ int main(){
     int no;
     cin>>no;
     int i=1;
-    int n = 2*no+1;
     while(i<=(no)){
-        int gaps = n-2*i+1,k=1;
+        int n = 2*i-1;
+        int gaps = n-i,k=1;
         int j = i;
-        while(k<=gaps/2){
+        while(k<=gaps){
             cout<<" ";
             k = k + 1;
         }
