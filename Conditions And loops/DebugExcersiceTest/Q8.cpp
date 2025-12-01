@@ -41,6 +41,6 @@ int main()
 {
     int n;
     cin>>n;
-    printPatt( n);
+    printPatt(n);
     return 0;
 }
