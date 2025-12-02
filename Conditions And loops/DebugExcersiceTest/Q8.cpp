@@ -1,5 +1,5 @@
-/*8. Debug the code. It is trying to print the given pattern.
-
+//8. Debug the code. It is trying to print the given pattern.
+/*
 Pattern
 N = 5
   *
@@ -14,8 +14,8 @@ using namespace std;
 void printPatt(int n){
     int i=1;
     while(i<=(n)){
-        int gaps = n-2*i,k=1;
-        if(i>(n)/2){
+        int gaps = n-2*i+1,k=1;
+        if(i>(n+1)/2){
             int no = (n+1)/2;
             gaps = 2*(i%no);
         }
@@ -23,7 +23,7 @@ void printPatt(int n){
             cout<<"A";
             k = k + 1;
         }
-        int ch = n - 1 - gaps;
+        int ch = n - gaps;
         while(ch>=1){
             cout<<"*";
             ch = ch - 1;
