@@ -20,7 +20,7 @@ void printPatt(int n){
             gaps = 2*(i%no);
         }
         while(k<=gaps/2){
-            cout<<"A";
+            cout<<" ";
             k = k + 1;
         }
         int ch = n - gaps;
@@ -30,7 +30,7 @@ void printPatt(int n){
         }
         k = 1;
         while(k<=gaps/2){
-            cout<<"A";
+            cout<<" ";
             k = k + 1;
         }
         cout<<"\n";
