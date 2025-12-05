@@ -1,4 +1,4 @@
-// Hollow Full Pyramid
+// Full Pyramid
 //          *
 //        * * *
 //      * * * * *
