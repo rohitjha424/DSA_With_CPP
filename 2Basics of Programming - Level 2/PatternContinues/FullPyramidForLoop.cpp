@@ -10,13 +10,15 @@ int main()
     cin >> n;
 
     for (int row = 0; row < n; row++)
-    { // row loop
+    {
+        // Space loop
         for (int col = 0; col < n - row; col++)
-        { // stars loop
+        {
             cout << " ";
         }
+        // Stars loop
         for (int col = 0; col < row + 1; col++)
-        { // stars loop
+        {
             cout << "* ";
         }
         cout << endl;
