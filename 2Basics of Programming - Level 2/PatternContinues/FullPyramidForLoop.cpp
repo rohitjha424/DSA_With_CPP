@@ -18,7 +18,7 @@ int main()
     for (int row = 0; row < n; row++)
     {
         // Space loop
-        for (int col = 0; col < n - row; col++)
+        for (int col = 0; col < n - row-1; col++)
         {
             cout << " ";
         }
