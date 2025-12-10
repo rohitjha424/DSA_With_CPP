@@ -1,5 +1,11 @@
 // FUll Pyramid Using Foor Loop.
 
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+
 #include <iostream>
 using namespace std;
 
