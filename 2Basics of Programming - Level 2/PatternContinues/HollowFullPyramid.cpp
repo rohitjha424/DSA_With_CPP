@@ -14,7 +14,10 @@ int main(){
             cout<<" ";
         }
         for(int col=0; col<row+1; col++){
-            cout<<"* ";
+            if(col==0 || col==row){
+
+                cout<<"* ";
+            }
         }
             cout<<endl;
 
