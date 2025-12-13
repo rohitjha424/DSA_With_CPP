@@ -1,4 +1,9 @@
 // Hollow Full Inverted Pyramid without Base:
+// *       *
+//  *     *
+//   *   *
+//    * *
+//     *
 
 #include <iostream>
 using namespace std;
