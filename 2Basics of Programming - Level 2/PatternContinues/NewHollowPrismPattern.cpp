@@ -1,8 +1,8 @@
 // Make the below hollow Pattern:
-// * * * *   * * * * 
+// * * * *   * * * *
 // * * *       * * *
 // * *           * *
-// *               * 
+// *               *
 // *               *
 // * *           * *
 // * * *       * * *
@@ -40,11 +40,7 @@ int main()
         {
             cout << "* ";
         }
-        for (int col = 0; col < n - row ; col++)
-        {
-            cout << "  ";
-        }
-        for (int col = 0; col < n - row - 1; col++)
+        for (int col = 0; col < 2 * (n - row) - 1; col++)
         {
             cout << "  ";
         }
