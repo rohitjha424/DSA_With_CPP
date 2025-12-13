@@ -1,4 +1,4 @@
-// Make the below hollow Pattern:
+// Make the below Fliped Solid Diamond Pattern:
 // * * * *   * * * *
 // * * *       * * *
 // * *           * *
