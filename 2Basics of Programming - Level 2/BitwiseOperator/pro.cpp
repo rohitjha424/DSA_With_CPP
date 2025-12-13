@@ -1,0 +1,1 @@
+//Bitwise operatos truth Table
