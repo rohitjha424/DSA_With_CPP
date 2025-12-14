@@ -1,4 +1,4 @@
-// Bitwise operatos : &, | , ~, ^
+// Bitwise OR operatos : "|"
 
 #include <iostream>
 using namespace std;
