@@ -1,4 +1,4 @@
-// typecasting
+// Implicit TypeCasting
 
 #include <iostream>
 using namespace std;
