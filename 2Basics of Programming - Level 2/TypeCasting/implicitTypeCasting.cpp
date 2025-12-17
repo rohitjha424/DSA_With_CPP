@@ -22,5 +22,16 @@ int main()
     */
     cout << a << endl;
 
+    // int to char
+    char ch1 = 'A';
+    char resChar = ch1 + 1;
+    /*
+    >> add int value of ch1 to 1>>65+1=66
+    >>convert to char as result is in char>>66 correspond to 'B'.
+    */
+
+    cout << resChar << endl;
+
+
     return 0;
 }
