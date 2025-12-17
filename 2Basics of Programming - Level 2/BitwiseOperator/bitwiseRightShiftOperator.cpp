@@ -17,5 +17,8 @@ int main()
     // when right shifted by 3>> 1/8 times.
     // hence the furmula becomes: originalNum /2 pow(shifted by x)
 
+    int b = -100;
+    cout << (b >> 1) << endl; // Will Result as -50
+
     return 0;
 }
