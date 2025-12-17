@@ -1,6 +1,5 @@
 // Bitwise Right Shift operator:"">>"
 
-
 #include <iostream>
 using namespace std;
 
