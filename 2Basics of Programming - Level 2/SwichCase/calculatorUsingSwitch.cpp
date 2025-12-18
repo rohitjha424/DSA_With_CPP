@@ -14,11 +14,27 @@ int main(){
     // op= 0>>add ; op = 1>>sub; op = 2 >>multiply; op = 3>>divide;
 
     switch(op){
-        case '0': result = a+b;
-        case '1': result = a-b;
-        case '2': result = a*b;
-        case '3': result = a/b;
+        case 0: 
+        cout<<"Addition of given Numbers is:";
+        result = a+b; 
+        break;
+
+        case 1: 
+        cout<<"Substraction of given Numbers is:";
+        result = a-b; 
+        break;
+
+        case 2: 
+        cout<<"multiplication of given Numbers is:";
+        result = a*b; 
+        break;
+
+        case 3: 
+        cout<<"Division of given Numbers is:";
+        result = a/b; 
+        break;
         default: cout<<"invalid operation"<<endl;
+        break;
 
     }
     cout<<result<<endl;
