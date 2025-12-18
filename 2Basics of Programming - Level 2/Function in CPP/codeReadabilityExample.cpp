@@ -3,16 +3,17 @@
 #include <iostream>
 using namespace std;
 
-void printName(string name){
+void printName(string name)
+{
 
-    for(int i =0 ; i<3; i++){
-        cout<<name<<endl;
+    for (int i = 0; i < 3; i++)
+    {
+        cout << name << endl;
     }
-
 }
 
-
-int main(){
+int main()
+{
 
     printName("Rohit");
     printName("Sharma");
