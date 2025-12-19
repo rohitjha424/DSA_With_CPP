@@ -1,4 +1,4 @@
-// Function to ceck prime Number.
+// Function to check prime Number.
 
 #include <iostream>
 using namespace std;
