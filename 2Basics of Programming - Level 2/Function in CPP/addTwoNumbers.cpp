@@ -1,4 +1,4 @@
-// Function to add two numbers
+// Function to print sum of two numbers
 
 #include <iostream>
 using namespace std;
