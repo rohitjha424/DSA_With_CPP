@@ -30,10 +30,13 @@ bool lineaSearch(int arr[], int size, int target)
 
 int main()
 {
+
     int arr[5] = {2, 4, 6, 8, 10};
     int size = 5;
+    // Printing an Array
     printArray(arr, size);
 
+    // Linear Search
     int target = 6;
     bool ifFound = lineaSearch(arr, size, target);
     if (ifFound)
