@@ -1,22 +1,22 @@
-// Problem Statement-2: Count 0's and 1's in an given Array.
+// Find Minimum Number in an Array
 
 #include <iostream>
 #include <limits.h>
 using namespace std;
 
 // Mthod 1 : Best Practice to use INT_MAX
- void findMin(int arr[], int size)
- {
-     int minNum = INT_MAX;
-     for (int i = 0; i < size; i++)
-     {
-         if (arr[i] < minNum)
-         {
-             minNum = arr[i];
-         }
-     }
-     cout << "Minimum Number in the given Array is: " << minNum << endl;
- }
+void findMin(int arr[], int size)
+{
+    int minNum = INT_MAX;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] < minNum)
+        {
+            minNum = arr[i];
+        }
+    }
+    cout << "Minimum Number in the given Array is: " << minNum << endl;
+}
 
 // Method 2: Initialize minMun with first Array element and then compare further
 // void findMin(int arr[], int size)
