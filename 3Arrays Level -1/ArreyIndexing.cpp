@@ -20,5 +20,22 @@ int main()
         cout << arr[i] << " ";
     }
 
+    
+    
+    //Taking input from the user for the Array elements:
+    int arr1[5];
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Enter the value for index:"<<i<<">>";
+        cin>>arr1[i];
+        cout<<endl;
+    }
+    //Printing user input values for the arrays :
+    for (int i = 0; i < 5; i++)
+    {
+        cout << arr1[i] << " ";
+    }
+
     return 0;
 }
