@@ -32,6 +32,7 @@ int main()
         cout<<endl;
     }
     //Printing user input values for the arrays :
+    cout << "Printing the user intialized array values:"<<endl;
     for (int i = 0; i < 5; i++)
     {
         cout << arr1[i] << " ";
