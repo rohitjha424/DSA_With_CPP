@@ -15,7 +15,14 @@ int main(){
 
     // cout<<"Array Created Successfully"<<endl;
 
-    int arr[100];
+    // int arr[100];
+    int a=5;
+    cout<<"Adreess of a is : "<<&a<<endl;
+    
+    int arr[10];
+    cout<<"Base adreess of arr is : "<<&arr<<endl;
+
+    
 
     return 0;
 }
