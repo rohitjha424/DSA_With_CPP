@@ -17,7 +17,7 @@ int main()
     // >>remaining indices zero will be stored automaticall>> int arr2[5] = {2,4,0,0,0}.
     for (int i = 0; i < 5; i++)
     {
-        cout << "" << arr2[i] << " ";
+        cout << arr2[i] << " ";
     }
 
     // Error Case when more values inserted than arrey size.
