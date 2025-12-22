@@ -19,29 +19,29 @@ using namespace std;
 //  }
 
 // Method 2: Initialize minMun with first Array element and then compare further
-void findMin(int arr[], int size)
-{
-    int minNum = arr[0];
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] < minNum)
-        {
-            minNum = arr[i];
-        }
-    }
-    cout << "Minimum Number in the given Array is: " << minNum << endl;
-}
-
-// Mthod 3 : using inbuilt Function min()
 // void findMin(int arr[], int size)
 // {
-//     int minNum;
-//     for (int i = 0; i < size; i++)
+//     int minNum = arr[0];
+//     for (int i = 1; i < size; i++)
 //     {
-//         minNum = min(arr[i], minNum);
+//         if (arr[i] < minNum)
+//         {
+//             minNum = arr[i];
+//         }
 //     }
 //     cout << "Minimum Number in the given Array is: " << minNum << endl;
 // }
+
+// Mthod 3 : using inbuilt Function min()
+void findMin(int arr[], int size)
+{
+    int minNum;
+    for (int i = 0; i < size; i++)
+    {
+        minNum = min(arr[i], minNum);
+    }
+    cout << "Minimum Number in the given Array is: " << minNum << endl;
+}
 
 int main()
 {
