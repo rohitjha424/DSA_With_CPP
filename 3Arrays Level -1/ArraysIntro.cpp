@@ -17,9 +17,11 @@ int main()
 
     // int arr[100];
     int a = 5;
+    cout<<"Size of a:"<<sizeof(a)<<endl;
     cout << "Adreess of a is : " << &a << endl;
 
     int arr[10];
+    cout<<"Size of a:"<<sizeof(arr)<<endl;
     cout << "Base adreess of arr is : " << &arr << endl;
 
     return 0;
