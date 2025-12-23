@@ -4,16 +4,34 @@
 #include <limits.h>
 using namespace std;
 
-// Mthod 1 : Uisng foor loop with decrement op "--"
+// Mthod 1 : Using in-built function swap()
 void reverseArray(int arr[], int size)
 {
+    int left = 0;
+    int right = size - 1;
     cout << "reversed Array is: " << endl;
-    for (int i = size-1; i >= 0; i--)
+    while (left <= right)
     {
-        cout<<arr[i]<<" ";
+        swap(arr[left], arr[right]);
+        left++;
+        right--;
+    }
+    // Printing Swapped Array
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
     }
 }
 
+// Mthod 2 : Uisng foor loop with decrement op "--"
+// void reverseArray(int arr[], int size)
+// {
+//     cout << "reversed Array is: " << endl;
+//     for (int i = size-1; i >= 0; i--)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+// }
 
 int main()
 {
