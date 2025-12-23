@@ -1,7 +1,6 @@
 // Reverse an Array
 
 #include <iostream>
-#include <limits.h>
 using namespace std;
 
 // Mthod 1 : Using in-built function swap()
