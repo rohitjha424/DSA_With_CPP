@@ -8,8 +8,8 @@ void findAllPairs(int arr[], int size)
     int j = 0;
     for (int i = 0; i < size; i++)
     {
-      cout<<arr[i]<<","<<arr[j]<<endl;
-      if(i==size-1){
+      cout<<"["<<arr[i]<<","<<arr[j]<<"] ";
+      if((i==size-1)&&(j<size)){
         j++;
         i=0;
       }
