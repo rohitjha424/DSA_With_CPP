@@ -1,6 +1,7 @@
 // Shift Array Element by 1
 // int arr[] = {10,20,30,40,50,60};
-// 60 10 20 30 40 50
+// Right Shiftresult : 60 10 20 30 40 50
+// Left Shift result : 20 30 40 50 60 10
 
 #include <iostream>
 using namespace std;
