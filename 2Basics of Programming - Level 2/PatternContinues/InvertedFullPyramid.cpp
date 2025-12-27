@@ -8,25 +8,28 @@ int main()
 
     int n;
     cin >> n;
-
     int i = n;
+
     while (i >= 1)
     {
 
         int gaps = n - i;
         int count = i;
         int k = 1;
+
         while (k <= gaps)
         {
             cout << " ";
             k++;
         }
+
         k = 1;
         while (k <= count)
         {
             cout << "* ";
             k++;
         }
+
         k = 1;
         while (k <= gaps)
         {
