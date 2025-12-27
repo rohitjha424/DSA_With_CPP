@@ -1,6 +1,6 @@
 // FUll Mirror Pyramid Using Foor Loop.
 
-//     * 
+//     *
 //    * *
 //   * * *
 //  * * * *
@@ -19,7 +19,7 @@ int main()
     int num;
     cout << "Enter number of rows: ";
     cin >> num;
-    int n= num/2;
+    int n = num / 2;
     for (int row = 0; row < n; row++)
     {
         // Space loop
