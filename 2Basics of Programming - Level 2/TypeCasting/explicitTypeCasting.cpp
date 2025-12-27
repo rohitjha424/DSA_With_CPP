@@ -20,11 +20,10 @@ int main()
     int intPi = (int)pi;   // convert the double to int, truncate the decimle part/
     cout << intPi << endl; // print 3
 
-
-    //float to char
+    // float to char
     float floatingNumber = 65.35;
-    char charValue = (char)floatingNumber; //convert 65.35 to char(which is also an int value as per ASCII)>>65>>A
-    cout<<charValue<<endl; // will print A
+    char charValue = (char)floatingNumber; // convert 65.35 to char(which is also an int value as per ASCII)>>65>>A
+    cout << charValue << endl;             // will print A
 
     return 0;
 }
