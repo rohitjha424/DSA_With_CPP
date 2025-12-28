@@ -73,5 +73,18 @@ int main()
     printVector(v); // top /last inserted element got popped/deleted
 
 
+    //inserting in vector by user input
+     vector<int>vect;
+
+     int vectSize;
+     cin>>vectSize;
+     for (int i = 0; i < vectSize; i++)
+    {
+        int d;
+        cin >> d;
+        vect.push_back(d);
+    }
+    printVector(vect);
+
     return 0;
 }
