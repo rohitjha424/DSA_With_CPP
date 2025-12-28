@@ -67,6 +67,11 @@ int main()
 
     printVector(v);
 
+    //deleting the elements >> vector works in LIFO>>last come first out
+
+    v.pop_back();
+    printVector(v); // top /last inserted element got popped/deleted
+
 
     return 0;
 }
