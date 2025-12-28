@@ -5,6 +5,7 @@ using namespace std;
 
 void fun(int a[], int size)
 {
+    cout<<"printing Array element:"<<endl;
     for (int i = 0; i < size; i++)
     {
         cout << a[i] << endl;
@@ -33,6 +34,6 @@ int main()
         arrary[i] = data;
     }
     fun(arrary, n);
-    
+
     return 0;
 }
