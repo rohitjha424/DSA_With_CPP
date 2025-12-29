@@ -13,7 +13,7 @@ int main()
     {
         if (N % i == 0)
         {
-            cout << "\n Not a Prime Number, divisible by " <<i<< endl;
+            cout << "\n Not a Prime Number, divisible by " << i << endl;
             return 0;
         }
         else
