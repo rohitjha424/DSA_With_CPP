@@ -9,25 +9,29 @@ void sortNegativeAndPositive(int arr[], int size)
     int positiveCount = 0;
 
    int j;
-    for (j = 0; j < size; i++){
+    for (j = 0; j < size; j++){
             if(arr[j]>0)
             break;
         }
 
     for (int i = 0; i < size; i++)
     {
+        if(arr[i]<0){
+            swap(arr[i],arr[i-1]);
+            j++;
+        }
         
     }
 
-    int i;
-    for (i = 0; i < negativeCount; i++)
-    {
-        arr[i] = 0;
-    }
-    for (int j = i; j < size; j++)
-    {
-        arr[j] = 1;
-    }
+    // int i;
+    // for (i = 0; i < negativeCount; i++)
+    // {
+    //     arr[i] = 0;
+    // }
+    // for (int j = i; j < size; j++)
+    // {
+    //     arr[j] = 1;
+    // }
 }
 
 int main()
