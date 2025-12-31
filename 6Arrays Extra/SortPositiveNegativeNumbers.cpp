@@ -5,33 +5,17 @@ using namespace std;
 
 void sortNegativeAndPositive(int arr[], int size)
 {
-    int negativeCount = 0;
-    int positiveCount = 0;
 
-   int j;
-    for (j = 0; j < size; j++){
-            if(arr[j]>0)
-            break;
-        }
-
+   int j=0;
     for (int i = 0; i < size; i++)
     {
         if(arr[i]<0){
-            swap(arr[i],arr[i-1]);
+            swap(arr[i],arr[j]);
             j++;
         }
         
     }
 
-    // int i;
-    // for (i = 0; i < negativeCount; i++)
-    // {
-    //     arr[i] = 0;
-    // }
-    // for (int j = i; j < size; j++)
-    // {
-    //     arr[j] = 1;
-    // }
 }
 
 int main()
@@ -41,7 +25,7 @@ int main()
 
     sortNegativeAndPositive(arr, size);
 
-    cout << "Array After Sorting:" << endl;
+    cout << "Array After Negative And Positive Sorting:" << endl;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
