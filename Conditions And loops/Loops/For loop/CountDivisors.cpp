@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
     int num;
-    cin>>num;
-    int count =0;
+    cin >> num;
+    int count = 0;
 
     for (int i = 1; i <= num; i++)
     {
@@ -16,6 +16,6 @@ int main()
             count++;
         }
     }
-    cout<<"Total Number of divisors: "<<count<<endl;
+    cout << "Total Number of divisors: " << count << endl;
     return 0;
 }
