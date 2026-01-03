@@ -27,15 +27,12 @@ int main()
     // }
     // cout<<"GCD of given numbers is: "<<gcd;
 
-
-
-    // Using Equilids Method:
+    // Using Euclidean Method (Subtraction)
 
     // Handle negative numbers
     num1 = abs(num1);
     num2 = abs(num2);
 
-    // Using Euclidean Method (Subtraction)
     while (num1 != num2)
     {
         if (num1 > num2)
