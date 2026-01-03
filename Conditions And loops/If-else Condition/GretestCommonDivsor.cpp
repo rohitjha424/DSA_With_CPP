@@ -27,7 +27,11 @@ int main()
     // }
     // cout<<"GCD of given numbers is: "<<gcd;
 
+
+
     // Using Equilids Method:
+
+    // Handle negative numbers
     num1 = abs(num1);
     num2 = abs(num2);
 
