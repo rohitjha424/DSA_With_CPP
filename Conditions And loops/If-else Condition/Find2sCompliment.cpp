@@ -8,10 +8,11 @@ int main()
     int num;
     cin >> num;
 
-    //2's Compliment = 1's compliment +1
-    int onesCompliment =  ~num;
+    // ~num → flips all bits of num
+    // Adding 1 → gives 2’s complement
 
-    int twosCompliment = onesCompliment +1;
+    int onesCompliment = ~num;
+    int twosCompliment = onesCompliment + 1;
 
     cout << " 2's coompliment of a given Number: " << twosCompliment << endl;
     return 0;
