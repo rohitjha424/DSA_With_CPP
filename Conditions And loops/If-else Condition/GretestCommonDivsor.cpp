@@ -29,7 +29,7 @@ int main()
 
     // Using Euclidean Method (Subtraction)
 
-    // Handle negative numbers
+    // Handle negative numbers >>abs() returns the absolute value of a number>> number without sign
     num1 = abs(num1);
     num2 = abs(num2);
 
