@@ -1,8 +1,4 @@
-// Find pairs in an Array
-// int arr[] = {10,20,30};
-// [10,10] [10,20] [10,30]
-// [20,10] [20,20] [20,30]
-// [30,10] [30,20] [30,30]
+// Two Sum to an target- Leet code Q1
 
 #include <iostream>
 using namespace std;
@@ -16,7 +12,6 @@ void twoSum(int arr[], int size, int target)
         {
             if (arr[i] + arr[j] == target)
             {
-
                 cout << i << "," << j << endl;
             }
         }
