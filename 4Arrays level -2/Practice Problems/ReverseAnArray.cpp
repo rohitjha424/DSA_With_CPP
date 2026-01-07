@@ -14,6 +14,15 @@ void reverseArray(int arr[], int size)
         left++;
         right--;
     }
+    
+    // in java there is no swap()function so use temp to swap the elements:
+    //   while (left < right) {
+    //     int temp = arr[left];
+    //     arr[left] = arr[right];
+    //     arr[right] = temp;
+    //     left++;
+    //     right--;
+    // }
 }
 
 int main()
