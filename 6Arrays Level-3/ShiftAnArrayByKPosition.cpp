@@ -1,7 +1,5 @@
-// Shift Array Element by nth position
-// int arr[] = {10,20,30,40,50,60};
-// Right Shiftresult : 60 10 20 30 40 50
-// Left Shift result : 20 30 40 50 60 10
+// Shift Array Element by kth position
+
 
 #include <iostream>
 #include <vector>
@@ -23,7 +21,6 @@ void rightShiftByOne(int arr[], int size, int kposition)
     }
     cout << endl;
 
-    // int temp = arr[size - 1];
 
     for (int i = size -1-kposition; i > 0; i--)
     {
@@ -35,7 +32,7 @@ void rightShiftByOne(int arr[], int size, int kposition)
 int main()
 {
     int arr[] = {10, 20, 30, 40, 50, 60,70};
-    // int arr1[] = {10, 20, 30, 40, 50, 60};
+
     int kposition =3;
     int size = 7;
 
