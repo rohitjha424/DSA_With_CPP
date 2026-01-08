@@ -1,43 +1,44 @@
 // Shift Array Element by kth position
-
+// Original Array:
+// 10 20 30 40 50 60 70
+// Array After Right Shifting Array Element by 3 position:
+// 50 60 70 10 20 30 40
 
 #include <iostream>
 #include <vector>
 using namespace std;
 
-void rightShiftByOne(int arr[], int size, int kposition)
+void rightShiftByKthPosition(int arr[], int size, int kposition)
 {
-    vector<int> tempArray(kposition); ;
+    //Vector for temporary storing the k elements from far right.
+    vector<int> tempArray(kposition);
 
-    int j =size-kposition;
-    for(int i =0; i<kposition; i++){
+    //storing last k elements in a vector
+    int j = size - kposition;
+    for (int i = 0; i < kposition; i++)
+    {
         tempArray[i] = arr[j];
         j++;
     }
-     cout << "temp Array:" << endl;
+
+    //shifting other elements by k position
+    for (int i = size - 1 - kposition; i >= 0; i--)
+    {
+        arr[i + kposition] = arr[i];
+    }
+
+    //copying the temp vector elements to the original array
     for (int i = 0; i < kposition; i++)
     {
-        cout << tempArray[i] << " ";
+        arr[i] = tempArray[i];
     }
-    cout << endl;
-
-
-    for (int i = size -1-kposition; i >= 0; i--)
-    {
-        arr[i+kposition] = arr[i];
-    }
-
-    for(int i =0; i<kposition; i++){
-        arr[i]=tempArray[i];
-    }
-
 }
 
 int main()
 {
-    int arr[] = {10, 20, 30, 40, 50, 60,70};
+    int arr[] = {10, 20, 30, 40, 50, 60, 70};
 
-    int kposition =3;
+    int kposition = 3;
     int size = 7;
 
     cout << "Original Array:" << endl;
@@ -45,12 +46,12 @@ int main()
     {
         cout << arr[i] << " ";
     }
-   
+
     cout << endl;
 
     // right shift result
-    rightShiftByOne(arr, size,kposition);
-    cout << "Array After Right Shifting Array Element by "<<kposition<<" position: "<< endl;
+    rightShiftByKthPosition(arr, size, kposition);
+    cout << "Array After Right Shifting Array Element by " << kposition << " position: " << endl;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
@@ -58,6 +59,5 @@ int main()
 
     cout << endl;
 
-    
     return 0;
 }
