@@ -10,10 +10,17 @@ using namespace std;
 
 void rightShiftByKthPosition(int arr[], int size, int kposition)
 {
-    //Vector for temporary storing the k elements from far right.
+    // Vector for temporary storing the k elements from far right.
     vector<int> tempArray(kposition);
 
-    //storing last k elements in a vector
+    //To Prevent the unnecessary full rotations:
+    // If Array size is 5, we need to rotate it to 13 times; rotating 5 times returns original order
+    // Rotating 10 times again returns the same original array
+    // Only remaining rotations matter: 13 − 10 equals 3 rotations
+    // Effective rotation count equals k modulo size, i.e., 13 % 5 = 3 he we need to use below line:
+    kposition = kposition % size;
+
+    // storing last k elements in a vector
     int j = size - kposition;
     for (int i = 0; i < kposition; i++)
     {
@@ -21,16 +28,17 @@ void rightShiftByKthPosition(int arr[], int size, int kposition)
         j++;
     }
 
-    //shifting other elements by k position
-    for (int i = size-1; i >= 0; i--)
+    // shifting other elements by k position
+    for (int i = size - 1; i >= 0; i--)
     {
-        if(i-kposition>=0){
+        if (i - kposition >= 0)
+        {
 
-            arr[i] = arr[i-kposition];
+            arr[i] = arr[i - kposition];
         }
     }
 
-    //copying the temp vector elements to the original array
+    // copying the temp vector elements to the original array
     for (int i = 0; i < kposition; i++)
     {
         arr[i] = tempArray[i];
