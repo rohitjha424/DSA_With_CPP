@@ -11,11 +11,12 @@ using namespace std;
 
 void reverse(int arr[], int start, int end)
 {
-    while(start < end) {
-    swap(arr[start], arr[end]);
-    start++;
-    end--;
-}
+    while (start < end)
+    {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
 }
 
 void rightShiftByKthPosition(int arr[], int size, int kposition)
