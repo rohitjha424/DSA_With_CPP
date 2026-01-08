@@ -25,6 +25,9 @@ void reverse(int arr[], int start, int end)
 void rightShiftByKthPosition(int arr[], int size, int kposition)
 {
 
+    // to prevent repeated rotations
+    kposition = kposition % size;
+
     // reverse whole array
     reverse(arr, 0, size - 1);
 
