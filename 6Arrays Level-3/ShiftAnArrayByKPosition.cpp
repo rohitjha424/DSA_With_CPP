@@ -22,9 +22,13 @@ void rightShiftByOne(int arr[], int size, int kposition)
     cout << endl;
 
 
-    for (int i = size -1-kposition; i > 0; i--)
+    for (int i = size -1-kposition; i >= 0; i--)
     {
         arr[i+kposition] = arr[i];
+    }
+
+    for(int i =0; i<kposition; i++){
+        arr[i]=tempArray[i];
     }
 
 }
