@@ -9,9 +9,12 @@
 #include <algorithm>
 using namespace std;
 
-void reverse(int arr[], int start, int end){
-    for(int i=start; i<end; i++){
-        if(start<end){
+void reverse(int arr[], int start, int end)
+{
+    for (int i = start; i < end; i++)
+    {
+        if (start < end)
+        {
             swap(arr[start], arr[end]);
             start++;
             end--;
@@ -21,16 +24,15 @@ void reverse(int arr[], int start, int end){
 
 void rightShiftByKthPosition(int arr[], int size, int kposition)
 {
-  
-    //reverse whole array
+
+    // reverse whole array
     reverse(arr, 0, size - 1);
 
-    //reverse the k elements from 0 to kth
-    reverse(arr, 0, kposition-1);
+    // reverse the k elements from 0 to kth
+    reverse(arr, 0, kposition - 1);
 
-    //reverse the remaining array:
+    // reverse the remaining array:
     reverse(arr, kposition, size - 1);
-
 }
 
 int main()
@@ -55,7 +57,6 @@ int main()
     {
         cout << arr[i] << " ";
     }
-
     cout << endl;
 
     return 0;
