@@ -46,7 +46,7 @@ int main()
 
     // right shift result
     rightShiftByOne(arr, size,kposition);
-    cout << "Array After Right Shifting Array Element by 1:" << endl;
+    cout << "Array After Right Shifting Array Element by "<<kposition<<" position: "<< endl;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
