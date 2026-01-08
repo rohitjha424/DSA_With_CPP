@@ -22,9 +22,12 @@ void rightShiftByKthPosition(int arr[], int size, int kposition)
     }
 
     //shifting other elements by k position
-    for (int i = size - 1 - kposition; i >= 0; i--)
+    for (int i = size-1; i >= 0; i--)
     {
-        arr[i + kposition] = arr[i];
+        if(i-kposition>=0){
+
+            arr[i] = arr[i-kposition];
+        }
     }
 
     //copying the temp vector elements to the original array
