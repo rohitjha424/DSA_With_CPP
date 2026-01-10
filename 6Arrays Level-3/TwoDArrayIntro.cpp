@@ -44,6 +44,16 @@ int main()
         cout<<endl;
     }
 
+    //column wise:
+    cout<<"column Wise traversal of given 2D Array:"<<endl;
+    for(int col =0; col <3; col++){
+        for(int row=0; row<2; row++){
+            cout<<arr[row][col]<<" ";
+        }
+        cout<<endl;
+    }
+
+
 
 
     return 0;
