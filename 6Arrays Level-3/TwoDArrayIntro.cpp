@@ -25,9 +25,13 @@ int main()
         for (int j = 0; j < 3; j++)
         {
             cout << arr[i][j] << " ";
-            cout << endl;
         }
+        cout << endl;
     }
+
+    //Acceessing Array elements 
+    cout <<"Array element on 2*2 position is :"<<arr[1][1]<<endl;
+
 
     return 0;
 }
