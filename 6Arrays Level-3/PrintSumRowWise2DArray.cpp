@@ -40,7 +40,7 @@ int main()
         cout << endl;
     }
 
-    rowWiseSum2DArray(arr,3);
+    rowWiseSum2DArray(arr, 3);
 
     return 0;
 }
