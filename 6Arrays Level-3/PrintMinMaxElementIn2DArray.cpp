@@ -12,7 +12,7 @@ int minElementIn2DArray(int arr[][3], int m, int n)
         for (int col = 0; col < n; col++)
         {
             if (arr[row][col] < minElement)
-                minElement=arr[row][col];
+                minElement = arr[row][col];
         }
     }
     return minElement;
