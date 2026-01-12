@@ -9,12 +9,11 @@ pair<int, int> searchIn2DArray(int arr[][3], int m, int n, int target)
     {
         for (int col = 0; col < n; col++)
         {
-           if(arr[row][col]== target)
-           return {row,col};
+            if (arr[row][col] == target)
+                return {row, col};
         }
-       
     }
-    return {-1,-1};
+    return {-1, -1};
 }
 
 int main()
@@ -39,8 +38,8 @@ int main()
         cout << endl;
     }
 
-    pair<int, int> results = searchIn2DArray(arr, 3,3,70);
-    cout<<"The target element in the 2D Array found at: "<<results.first<<","<<results.second<<endl;
+    pair<int, int> results = searchIn2DArray(arr, 3, 3, 70);
+    cout << "The target element in the 2D Array found at: " << results.first << "," << results.second << endl;
 
     return 0;
 }
