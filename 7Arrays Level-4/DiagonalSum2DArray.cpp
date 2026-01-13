@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int diagonalSum2DArray(int arr[][3], int size)
+void diagonalSum2DArray(int arr[][3], int size)
 {
 
     int diagonalSum1 = 0;
@@ -12,8 +12,9 @@ int diagonalSum2DArray(int arr[][3], int size)
     {
         for (int col = 0; col < size; col++)
         {
-            if (row == col)
-              diagonalSum1 = diagonalSum1+arr[row][col];
+            if (row == col){
+                diagonalSum1 = diagonalSum1+arr[row][col];
+            }
         }
     }
 
@@ -22,13 +23,18 @@ int diagonalSum2DArray(int arr[][3], int size)
     {
         for (int col = 0; col < size; col++)
         {
-            if (row + col == size-1 )
-            cout<<"Adding: "<<arr[row][col]<<endl;
-              diagonalSum2 = diagonalSum2+arr[row][col];
+            if (row + col == size-1 ){
+                if(size%2!=0 && row==col){
+                    continue;
+                }
+                else{
+                    diagonalSum2 += arr[row][col];
+                }
+            }
         }
     }
 
-    return diagonalSum1+diagonalSum2;
+    cout<<diagonalSum1+ diagonalSum2;
 }
 
 
@@ -52,8 +58,9 @@ int main()
         cout << endl;
     }
 
-    int diagonalSum = diagonalSum2DArray(arr, 3);
-    cout << "Diagona Sum: " << diagonalSum << endl;
+     diagonalSum2DArray(arr, 3);
+    // int diagonalSum = diagonalSum2DArray(arr, 3);
+    // cout << "Diagona Sum: " << diagonalSum << endl;
 
   
     return 0;
