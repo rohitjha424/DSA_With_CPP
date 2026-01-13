@@ -3,18 +3,19 @@
 #include <limits.h>
 using namespace std;
 
-void diagonalSum2DArray(int arr[][3], int size)
+void transposeMatrix(int arr[][3], int size)
 {
     // int sum =0;
     for(int i=0; i<size; i++){
-        for(int j=0; j<size; j++){
+        for(int j=i+1; j<size; j++){
 
             if(i != j){
+                cout<<i<<endl;
                 swap(arr[i][j], arr[j][i]);
             }
         }
     }
- cout << endl
+    cout << endl
          << "2D Array:" << endl;
     for (int i = 0; i < 3; i++)
     {
@@ -45,7 +46,7 @@ int main()
         }
         cout << endl;
     }
-    diagonalSum2DArray(arr, 3);
+    transposeMatrix(arr, 3);
     
     return 0;
 }
