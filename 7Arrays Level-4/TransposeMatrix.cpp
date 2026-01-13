@@ -1,4 +1,4 @@
-// Transpose Matrix
+// Transpose Matrix >> works only for Square Matrix
 // 2D Original Array:
 // 10 20 30
 // 40 50 60
