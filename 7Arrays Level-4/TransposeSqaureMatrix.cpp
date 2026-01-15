@@ -13,7 +13,6 @@ using namespace std;
 
 void transposeSquareMatrix(int arr[][3], int size)
 {
-    // int sum =0;
     for (int i = 0; i < size; i++)
     {
         for (int j = i + 1; j < size; j++)
@@ -57,7 +56,7 @@ int main()
         }
         cout << endl;
     }
-    
+
     transposeSquareMatrix(arr, 3);
 
     return 0;
