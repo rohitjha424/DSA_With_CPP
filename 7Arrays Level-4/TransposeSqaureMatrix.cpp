@@ -2,7 +2,7 @@
 // 2D Original Array:
 // 10 20 30
 // 40 50 60
-// 70 80 90 
+// 70 80 90
 // 2D Array after doing Transpose of Matrix:
 // 10 40 70
 // 20 50 80
@@ -11,7 +11,7 @@
 #include <iostream>
 using namespace std;
 
-void transposeMatrix(int arr[][3], int size)
+void transposeSquareMatrix(int arr[][3], int size)
 {
     // int sum =0;
     for (int i = 0; i < size; i++)
@@ -25,7 +25,8 @@ void transposeMatrix(int arr[][3], int size)
         }
     }
 
-    cout << endl<< "2D Array after doing Transpose of Matrix:" << endl;
+    cout << endl
+         << "2D Array after doing Transpose of Matrix:" << endl;
 
     for (int i = 0; i < 3; i++)
     {
@@ -56,7 +57,8 @@ int main()
         }
         cout << endl;
     }
-    transposeMatrix(arr, 3);
+    
+    transposeSquareMatrix(arr, 3);
 
     return 0;
 }
