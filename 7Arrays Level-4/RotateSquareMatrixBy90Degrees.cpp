@@ -17,6 +17,16 @@ void rotateSqaureMatrixBy90DegreesClockwise(int arr[][3], int size)
         }
     }
 
+    for (int i = 0; i < size; i++)
+    {
+        int start=0 ,end=size-1;
+        while(start<end){
+            swap(arr[i][start], arr[i][end]);
+            start++;
+            end--;
+        }
+    }
+
     cout << endl
          << "2D Array after doing Transpose of Matrix:" << endl;
 
