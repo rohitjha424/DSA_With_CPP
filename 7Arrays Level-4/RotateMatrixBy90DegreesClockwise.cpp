@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-void transposeMatrix(int arr[][3], int m, int n)
+void rotateSqaureMatrixBy90DegreesClockwise(int arr[][3], int m, int n)
 {
     int row = m;
     int col = n;
@@ -64,7 +64,7 @@ int main()
         cout << endl;
     }
     
-    transposeMatrix(arr, 2, 3);
+    rotateSqaureMatrixBy90DegreesClockwise(arr, 2, 3);
 
     return 0;
 }
