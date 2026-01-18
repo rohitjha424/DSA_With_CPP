@@ -1,7 +1,5 @@
 // Spiral print of a 2D array:
 
-// Rotate a Square matrix by 90 degrees clockwise.
-
 #include <iostream>
 using namespace std;
 
@@ -9,35 +7,38 @@ void spiralPrint2DArray(int arr[][5], int size)
 {
     cout << "Spiral Print: " << endl;
     int startingRow = 0;
-    int endingCol = size-1;
+    int endingCol = size - 1;
     int endingRow = size - 1;
-    int startingCol=0;
-    while(startingRow<=endingRow && startingCol<=endingCol){
-    for (int i=startingCol; i <=endingCol ; i++)
+    int startingCol = 0;
+    while (startingRow <= endingRow && startingCol <= endingCol)
     {
-        cout << arr[startingRow][i] << " ";
-    }
-    startingRow++;
+        for (int i = startingCol; i <= endingCol; i++)
+        {
+            cout << arr[startingRow][i] << " ";
+        }
+        startingRow++;
 
-    cout<<endl;
-    for(int i = startingRow; i<=endingRow; i++){
-        cout << arr[i][endingRow]<<endl;
-    }
-    endingCol--;
+        cout << endl;
+        for (int i = startingRow; i <= endingRow; i++)
+        {
+            cout << arr[i][endingRow] << endl;
+        }
+        endingCol--;
 
-    for(int i=endingCol; i>= startingCol; i--)
-    {
-        cout << arr[endingRow][i] << " ";
-    }
-    cout<<endl; 
-    endingRow--;
+        for (int i = endingCol; i >= startingCol; i--)
+        {
+            cout << arr[endingRow][i] << " ";
+        }
+        cout << endl;
+        endingRow--;
 
-     for(int i =endingRow; i>=startingRow; i--){
-        cout << arr[i][startingCol]<<endl;
+        for (int i = endingRow; i >= startingRow; i--)
+        {
+            cout << arr[i][startingCol] << endl;
+        }
+        cout << endl;
+        startingCol++;
     }
-    cout<<endl;
-    startingCol++;
-}
 }
 
 int main()
