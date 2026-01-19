@@ -1,5 +1,8 @@
 /*Debug the code. Your task is to populate the array using the integer values
 in the range 1 to N (both inclusive) in the order - 1,3,5,.......,6,4,2. */
+// Enter N:
+// 13
+// 1 3 5 7 9 11 13 12 10 8 6 4 2
 
 #include <iostream>
 using namespace std;
@@ -9,13 +12,13 @@ void populate(int arr[], int n)
     int j = 0;
     for (int i = 0; i < n; i = i + 2)
     {
-        arr[n - j-1] = i + 2;
+        arr[n - j - 1] = i + 2;
         arr[j] = i + 1;
         j++;
     }
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i]<<" ";
+        cout << arr[i] << " ";
     }
 }
 
@@ -25,8 +28,6 @@ int main()
     cout << "Enter N: " << endl;
     cin >> n;
     int arr[n];
-
     populate(arr, n);
-
     return 0;
 }
