@@ -23,9 +23,11 @@ void PrintExtremeElementsAlternately(vector<int>& arr, int size){
     int Max_element = size-1;
     int Min_element = 0;
     cout<<"Printing the Extreme Elements Alternately"<<endl;
-    while(Min_element<Max_element){
+    while(Min_element<=Max_element){
         cout<<arr[Min_element]<<" ";
-        cout<<arr[Max_element]<<" ";
+        if(Min_element !=Max_element){
+            cout<<arr[Max_element]<<" ";
+        }
         Min_element++;
         Max_element--;
     }
