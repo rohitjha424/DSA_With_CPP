@@ -1,5 +1,10 @@
 //Print Extreme Elements Alternately
-
+// Original Array:
+// 1 3 2 4 5
+// Sorted Array:
+// 1 2 3 4 5
+// Printing the Extreme Elements Alternately
+// 1 5 2 4 3
 
 #include <iostream>
 #include <vector>
