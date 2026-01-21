@@ -1,4 +1,7 @@
 // Find First Unsorted Element In Array, return its index else -1.
+// Original Array:
+// 1 2 3 4 6 5 7 8
+// The  First Unsorted Element In Array is at: 5th index
 
 #include <iostream>
 #include <vector>
@@ -6,11 +9,10 @@ using namespace std;
 
 int FindFirstUnsortedElementInArray(vector<int> &arr, int size)
 {
-
-
-    for (int i = 0; i < size-1; i++)
+    for (int i = 0; i < size - 1; i++)
     {
-        if(arr[i+1]<arr[i]){
+        if (arr[i + 1] < arr[i])
+        {
             return i;
         }
     }
@@ -29,7 +31,7 @@ int main()
     cout << endl;
 
     int ans = FindFirstUnsortedElementInArray(arr, size);
-    cout<<"The  First Unsorted Element In Array is at: "<<ans<<"th index"<<endl;
+    cout << "The  First Unsorted Element In Array is at: " << ans << "th index" << endl;
 
     return 0;
 }
