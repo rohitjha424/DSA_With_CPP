@@ -1,7 +1,12 @@
-//Rotate any Matrix to 90 Degrees Clockwise
+// Rotate any Matrix to 90 Degrees Clockwise
+// 2D Original Array:
+// 10 20 30 
+// 40 50 60 
 
-
-
+// 2D Array after Rotating for 90 Degrees Clockwise:
+// 40 10
+// 50 20
+// 60 30
 #include <iostream>
 using namespace std;
 
@@ -33,7 +38,8 @@ void rotateSqaureMatrixBy90DegreesClockwise(int arr[][3], int m, int n)
         }
     }
 
-    cout << endl<< "2D Array after Rotating for 90 Degrees Clockwise:" << endl;
+    cout << endl
+         << "2D Array after Rotating for 90 Degrees Clockwise:" << endl;
 
     for (int i = 0; i < resultMatrixRow; i++)
     {
@@ -63,7 +69,7 @@ int main()
         }
         cout << endl;
     }
-    
+
     rotateSqaureMatrixBy90DegreesClockwise(arr, 2, 3);
 
     return 0;
