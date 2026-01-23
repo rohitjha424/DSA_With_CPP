@@ -14,7 +14,7 @@ using namespace std;
 void PrintExtremeElementsAlternately(vector<int> &arr, int size)
 {
     sort(arr.begin(), arr.end());
-    
+
     cout << "Sorted Array:" << endl;
     for (int i = 0; i < size; i++)
     {
@@ -41,7 +41,7 @@ int main()
 {
     vector<int> arr = {1, 3, 2, 4, 5};
     int size = arr.size();
-    
+
     cout << "Original Array:" << endl;
     for (int i = 0; i < size; i++)
     {
