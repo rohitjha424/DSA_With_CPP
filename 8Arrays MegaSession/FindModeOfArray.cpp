@@ -15,6 +15,25 @@ void findMode(vector<int> &arr, int size)
         cout << arr[i] << " ";
     }
 
+    int maxFreq = 1;
+    int mode = arr[0];
+    int currentFreq = 1;
+
+    for(int i=1; i<size; i++){
+        if(arr[i] ==arr[i-1]){
+            currentFreq++;
+        }
+        else{
+            currentFreq =1;
+        }
+
+        if(currentFreq>maxFreq){
+            maxFreq = currentFreq;
+            mode = arr[i];
+        }
+    }
+    cout<<"Mode is:"<<mode<<endl;
+
 }
 int main()
 {
