@@ -1,5 +1,9 @@
-// Find Mode of the Array
-
+// Find Mode(Most freeuent element) of the Array
+// Original Array:
+// 1 2 3 4 3 5 3 6 3 7
+// Sorted Array is :
+// 1 2 3 3 3 3 4 5 6 7
+// Mode is:3
 #include <iostream>
 #include <vector>
 #include <algorithm>
