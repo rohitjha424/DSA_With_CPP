@@ -63,8 +63,12 @@ void lowestFreqency(vector<int> &arr, int size)
             currentFreq =1;
         }
     }
-          cout
-         << "lowest Frequesncy is:" << least << endl;
+    if(currentFreq < minFreq){
+                minFreq = currentFreq;
+                least = arr[size-1];
+        }    
+        
+        cout<< "lowest Frequesncy is:" << least << endl;
 }
 int main()
 {
