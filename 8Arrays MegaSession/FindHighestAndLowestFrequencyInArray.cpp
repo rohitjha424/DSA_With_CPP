@@ -17,6 +17,7 @@ void findMode(vector<int> &arr, int size)
     int maxFreq = 1;
     int mode = arr[0];
     int currentFreq = 1;
+    int lowestFrequency = arr[0];
 
     for (int i = 1; i < size; i++)
     {
@@ -27,6 +28,7 @@ void findMode(vector<int> &arr, int size)
         else
         {
             currentFreq = 1;
+            lowestFrequency= arr[i];
         }
 
         if (currentFreq > maxFreq)
@@ -36,11 +38,13 @@ void findMode(vector<int> &arr, int size)
         }
     }
     cout << endl
-         << "Mode is:" << mode << endl;
+         << "Max Frequesncy is:" << mode << endl;
+          cout << endl
+         << "lowest Frequesncy is:" << lowestFrequency << endl;
 }
 int main()
 {
-    vector<int> arr = {1, 2, 3, 4, 3, 5, 3, 6, 3, 7};
+    vector<int> arr = {4,4,1,2,2,2,3,3,3,3};
     int size = arr.size();
 
     cout << "Original Array:" << endl;
