@@ -1,4 +1,11 @@
-//Find Highest And Lowest Frequency Seperately.
+// Find Highest And Lowest Frequency Seperately.
+// Original Array:
+// 4 4 1 2 2 2 3 3 3 3
+// Sorted Array is :
+// 1 2 2 2 3 3 3 3 4 4
+// Max Frequesncy is:3
+// lowest Frequesncy is:1
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -39,7 +46,6 @@ void highestFreqency(vector<int> &arr, int size)
     }
     cout << endl
          << "Max Frequesncy is:" << mode << endl;
-
 }
 void lowestFreqency(vector<int> &arr, int size)
 {
@@ -56,23 +62,25 @@ void lowestFreqency(vector<int> &arr, int size)
         }
         else
         {
-            if(currentFreq < minFreq){
+            if (currentFreq < minFreq)
+            {
                 minFreq = currentFreq;
-                least = arr[i-1];
+                least = arr[i - 1];
             }
-            currentFreq =1;
+            currentFreq = 1;
         }
     }
-    if(currentFreq < minFreq){
-                minFreq = currentFreq;
-                least = arr[size-1];
-        }    
-        
-        cout<< "lowest Frequesncy is:" << least << endl;
+    if (currentFreq < minFreq)
+    {
+        minFreq = currentFreq;
+        least = arr[size - 1];
+    }
+
+    cout << "lowest Frequesncy is:" << least << endl;
 }
 int main()
 {
-    vector<int> arr = {4,4,1,2,2,2,3,3,3,3};
+    vector<int> arr = {4, 4, 1, 2, 2, 2, 3, 3, 3, 3};
     int size = arr.size();
 
     cout << "Original Array:" << endl;
