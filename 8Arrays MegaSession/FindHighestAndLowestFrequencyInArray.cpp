@@ -2,9 +2,10 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <climits>
 using namespace std;
 
-void findMode(vector<int> &arr, int size)
+void highestFreqency(vector<int> &arr, int size)
 {
 
     sort(arr.begin(), arr.end());
@@ -28,7 +29,6 @@ void findMode(vector<int> &arr, int size)
         else
         {
             currentFreq = 1;
-            lowestFrequency= arr[i];
         }
 
         if (currentFreq > maxFreq)
@@ -39,8 +39,32 @@ void findMode(vector<int> &arr, int size)
     }
     cout << endl
          << "Max Frequesncy is:" << mode << endl;
-          cout << endl
-         << "lowest Frequesncy is:" << lowestFrequency << endl;
+
+}
+void lowestFreqency(vector<int> &arr, int size)
+{
+    int minFreq = INT_MAX;
+    int least = arr[0];
+    int currentFreq = 1;
+    // int lowestFrequency = arr[0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (arr[i] == arr[i - 1])
+        {
+            currentFreq++;
+        }
+        else
+        {
+            if(currentFreq < minFreq){
+                minFreq = currentFreq;
+                least = arr[i-1];
+            }
+            currentFreq =1;
+        }
+    }
+          cout
+         << "lowest Frequesncy is:" << least << endl;
 }
 int main()
 {
@@ -54,7 +78,8 @@ int main()
     }
     cout << endl;
 
-    findMode(arr, size);
+    highestFreqency(arr, size);
+    lowestFreqency(arr, size);
 
     return 0;
 }
