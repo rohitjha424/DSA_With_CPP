@@ -66,6 +66,10 @@ int main()
     cout<<"New First Element: "<<marks[0]<<endl;
     cout<<"New Size of the vector is : "<< marks.size()<<endl; // number of elements inserted
 
+    //erase() // will erase the elemets within the limits as paramenetrs
+    marks.erase(marks.begin(), marks.end());
+    cout<<"New Size of the vector is : "<< marks.size()<<endl; //will return 0 as all elements erased
+
 
     
     
