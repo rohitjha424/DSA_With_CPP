@@ -47,6 +47,15 @@ int main()
     marks.push_back(60);
     cout<<"vector new capacity is: "<<marks.capacity()<<endl; 
 
+      //printing New size
+    cout<<"New Size of the vector is : "<< marks.size()<<endl; // number of elements inserted
+    
+    //reserve()
+    // marks.reserve(10)// it will reseve minimum 10 blocks capacitu for the vector
+    
+    // max_size() //returns max size of the vector can be created by system
+    cout<<"max size of the vector can be created is : "<< marks.max_size()<<endl; // 
+
 
 
     
