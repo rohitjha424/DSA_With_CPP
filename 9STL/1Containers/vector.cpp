@@ -7,13 +7,21 @@ using namespace std;
 int main()
 {
     // creation
-    vector<int> marks(5, -1); 
+    vector<int> marks; 
     // creation with size
     // vector<int> miles[20]; // will create a vector names miles with size 20.
 
     // // creating vector with the initialization
     // vector<int> distances(15, 0); // will create vector named distances with size 15 and 0 in all indexes.
 
-    cout<<*(marks.begin())<<endl; // returns first element of vector 
+    // cout<<*(marks.begin())<<endl; // returns first element of vector 
+
+    //to insert values in vector
+    marks.push_back(10);
+    marks.push_back(20);
+    marks.push_back(30);
+    marks.push_back(40);
+
+
 
 }
