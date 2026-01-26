@@ -100,7 +100,16 @@ int main()
     cout<<endl;
 
 
-    
+    //****traversing a vector using iterator ***********
+
+    //creating an interator
+    vector<int>::iterator it = first.begin(); //  iterator 'it' is at first element of the vector 'first' 
+
+    cout<<"Printing Vector 'first' using iterator : ";
+    while(it != first.end()){  // it will traverse till end of the vector
+        cout<<*it<<" ";
+        it++;
+    }
     
     
     
