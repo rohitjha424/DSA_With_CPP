@@ -54,7 +54,12 @@ int main()
     // marks.reserve(10)// it will reseve minimum 10 blocks capacitu for the vector
     
     // max_size() //returns max size of the vector can be created by system
-    cout<<"max size of the vector can be created is : "<< marks.max_size()<<endl; // 
+    cout<<"max size of the vector can be created is : "<< marks.max_size()<<endl;
+
+    
+    //delete all elements of the vector
+    marks.clear();
+    cout<<"New Size of the vector is : "<< marks.size()<<endl; //will return 0 as all elements removed
 
 
 
