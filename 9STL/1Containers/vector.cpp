@@ -110,8 +110,15 @@ int main()
         cout<<*it<<" ";
         it++;
     }
+    cout<<endl;
     
-    
+    // 2D Vector Creation
+    vector<vector<int>> arr(5, vector<int>(4,0)); //2d array with 4 rows and 4 col with intial values as 0 for each cell.
+    int total_rows = arr.size();
+    int total_col = arr[0].size();
+
+    cout<<"2D vector rows is: "<<total_rows<<" and columns are: "<<total_col<<endl;
+
     
     // creation with size
     // vector<int> miles[20]; // will create a vector names miles with size 20.
