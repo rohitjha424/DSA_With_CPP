@@ -38,6 +38,16 @@ int main()
     cout<<"elemenet at index 2 is: "<<marks[2]<<endl; 
     //using at()
     cout<<"elemenet at index 2 is: "<<marks.at(2)<<endl; 
+    
+    //capacity
+    cout<<"vector capacity is: "<<marks.capacity()<<endl; // returns Number of blocks allocated
+    
+    //if we add two more elements >>Vector Array capacity doubles from previsous capacity of 4
+    marks.push_back(50);
+    marks.push_back(60);
+    cout<<"vector new capacity is: "<<marks.capacity()<<endl; 
+
+
 
     
     
