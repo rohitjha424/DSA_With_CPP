@@ -19,10 +19,12 @@ int main()
     cout<<"Size of the vector is : "<< marks.size()<<endl;
     
     //removing an element form vector
-    
-    marks.pop_back();
-    
+    marks.pop_back(); // last element will be removed
     cout<<"Size of the vector after removing an element is : "<< marks.size()<<endl;
+
+    //frront() and back() implementation
+    cout<<marks.front()<<endl; // return the first element
+    cout<<marks.back()<<endl;  // return the last element
     
     
     
