@@ -25,6 +25,14 @@ int main()
     //frront() and back() implementation
     cout<<marks.front()<<endl; // return the first element
     cout<<marks.back()<<endl;  // return the last element
+
+    //empty()
+    if(marks.empty()==true){
+        cout<<"vector is Empty"<<endl;  // will return true if vector is empty
+    }
+    else{
+        cout<<"vector is not empty"<<endl;
+    }
     
     
     
