@@ -58,9 +58,13 @@ int main()
 
     
     //delete all elements of the vector
-    marks.clear();
-    cout<<"New Size of the vector is : "<< marks.size()<<endl; //will return 0 as all elements removed
+    // marks.clear();
+    // cout<<"New Size of the vector is : "<< marks.size()<<endl; //will return 0 as all elements removed
 
+    //insert()
+    marks.insert(marks.begin(),50); // will insert (50) at starting of the vector
+    cout<<"New First Element: "<<marks[0]<<endl;
+    cout<<"New Size of the vector is : "<< marks.size()<<endl; // number of elements inserted
 
 
     
