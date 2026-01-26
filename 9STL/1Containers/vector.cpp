@@ -119,6 +119,15 @@ int main()
 
     cout<<"2D vector rows is: "<<total_rows<<" and columns are: "<<total_col<<endl;
 
+
+    //2D array vector with different column size for rows.
+    vector<vector<int>> brr(4); //2d array with 4 rows.
+    arr[0] = vector<int>(5); // 1st row 5 coumns
+    arr[1] = vector<int>(2); // 2nd row with 2 coumns
+    arr[2] = vector<int>(3); // 3rd row with 3 columns
+    arr[3] = vector<int>(1); // 4th row with 1 coumn
+
+
     
     // creation with size
     // vector<int> miles[20]; // will create a vector names miles with size 20.
