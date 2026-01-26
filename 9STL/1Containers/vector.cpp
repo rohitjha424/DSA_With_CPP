@@ -22,6 +22,9 @@ int main()
     marks.push_back(30);
     marks.push_back(40);
 
+    //printing size
+    cout<<"Size of the vector is : "<< marks.size()<<endl;
+
 
 
 }
