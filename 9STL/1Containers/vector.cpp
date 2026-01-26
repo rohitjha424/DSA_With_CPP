@@ -67,8 +67,37 @@ int main()
     cout<<"New Size of the vector is : "<< marks.size()<<endl; // number of elements inserted
 
     //erase() // will erase the elemets within the limits as paramenetrs
-    marks.erase(marks.begin(), marks.end());
-    cout<<"New Size of the vector is : "<< marks.size()<<endl; //will return 0 as all elements erased
+    // marks.erase(marks.begin(), marks.end());
+    // cout<<"New Size of the vector is : "<< marks.size()<<endl; //will return 0 as all elements erased
+
+
+    //swap()
+     vector<int> first; 
+    
+    //to insert values in vector
+    first.push_back(1);
+    first.push_back(2);
+    first.push_back(3);
+    first.push_back(4);
+    
+    vector<int> second; 
+    second.push_back(10);
+    second.push_back(20);
+    second.push_back(30);
+    second.push_back(40);
+    
+    first.swap(second); // using swap function to swap vector first with vector second
+
+    cout<<"Vector First now : ";
+    for( int i:first){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    cout<<"Vector second now : ";
+    for( int i:second){
+        cout<<i<<" ";
+    }
+    cout<<endl;
 
 
     
