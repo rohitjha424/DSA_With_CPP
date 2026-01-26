@@ -33,6 +33,12 @@ int main()
     else{
         cout<<"vector is not empty"<<endl;
     }
+
+    //Accessing Vector element by [index]
+    cout<<"elemenet at index 2 is: "<<marks[2]<<endl; 
+    //using at()
+    cout<<"elemenet at index 2 is: "<<marks.at(2)<<endl; 
+
     
     
     
