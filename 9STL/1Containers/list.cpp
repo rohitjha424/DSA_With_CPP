@@ -22,7 +22,13 @@ int main()
     myList.push_front(2);
     myList.push_front(1);
 
-    
+    // *** deletion **
+    //deletion from back
+    myList.pop_back();
+    //deletion from front
+    myList.pop_front();
+
+
 
 
 
