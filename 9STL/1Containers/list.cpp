@@ -36,6 +36,14 @@ int main()
 
     cout<<"Size of he List asfter clearing: "<<myList.size()<<endl;
 
+    //empty()
+    if(myList.empty()==true){
+        cout<<"List is empty"<<endl;
+    }
+    else{
+        cout<<"List is not empty"<<endl;
+    }
+
 
 
 
