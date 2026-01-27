@@ -32,9 +32,9 @@ int main()
     cout<<"Size of he List: "<<myList.size()<<endl;
 
     //clearing the List
-    myList.clear();
+    // myList.clear();
 
-    cout<<"Size of he List asfter clearing: "<<myList.size()<<endl;
+    // cout<<"Size of he List asfter clearing: "<<myList.size()<<endl;
 
     //empty()
     if(myList.empty()==true){
@@ -43,6 +43,17 @@ int main()
     else{
         cout<<"List is not empty"<<endl;
     }
+
+    //traversing in list
+
+    list<int>::iterator it = myList.begin();
+    
+    cout<<"list elements are: ";
+    while(it != myList.end()){
+        cout<<*it<<" ";
+        it++;
+    }
+    cout<<endl;
 
 
 
