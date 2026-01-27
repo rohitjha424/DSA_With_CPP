@@ -29,6 +29,13 @@ int main()
     myList.pop_front();      //2->3->4->10->20->30
 
 
+    cout<<"Size of he List: "<<myList.size()<<endl;
+
+    //clearing the List
+    myList.clear();
+
+    cout<<"Size of he List asfter clearing: "<<myList.size()<<endl;
+
 
 
 
