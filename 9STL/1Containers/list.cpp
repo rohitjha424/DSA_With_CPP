@@ -56,6 +56,20 @@ int main()
     cout<<endl;
 
 
+    //remove() >>>>> Will remove the element from list
+
+    myList.remove(30);
+
+    list<int>::iterator it2 = myList.begin();
+    
+    cout<<"list elements after removing are: ";
+    while(it2 != myList.end()){
+        cout<<*it2<<" ";
+        it2++;
+    }
+    cout<<endl;
+
+
 
 
 
