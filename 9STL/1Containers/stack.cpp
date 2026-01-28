@@ -19,6 +19,11 @@ int main()
 
     cout<<"Stack Size is : "<<st.size()<<endl;  // will print stack Size
 
+    //deletion
+    st.pop(); //will delete the top element 40 : //10,20,30
+    
+    cout<<"Stack Size after popping is : "<<st.size()<<endl;  // will print 3
+
 
 
 
