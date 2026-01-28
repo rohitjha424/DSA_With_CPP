@@ -18,6 +18,11 @@ int main()
 
     cout<<"Queue Size is : "<<q.size()<<endl;  // will print Queue Size
     
+    //deletion
+    q.pop(); //will delete the front element 10 : //20,30,40
+    
+    cout<<"Queue Size after popping is : "<<q.size()<<endl;  // will print 3
+    
     
 
 
