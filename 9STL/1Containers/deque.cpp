@@ -30,5 +30,8 @@ int main()
     //deletion on front
     dq.pop_front(); //3,2,1,10,20,30
 
+    //size
+      cout<<"eque Size is : "<<dq.size()<<endl;  // will print deqeue Size
+
     return 0;
 }
