@@ -31,7 +31,13 @@ int main()
     dq.pop_front(); //3,2,1,10,20,30
 
     //size
-      cout<<"eque Size is : "<<dq.size()<<endl;  // will print deqeue Size
+    cout<<"deque Size is : "<<dq.size()<<endl;  // will print deqeue Size
+    
+    //back() and begin()
+    cout<<"deque Size is : "<<(dq.back())<<endl;  // will print deqeue last element
+    cout<<"deque Size is : "<<*(dq.begin())<<endl;  // will print deqeue front element
+
+
 
     return 0;
 }
