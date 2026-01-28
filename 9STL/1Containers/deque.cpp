@@ -53,6 +53,16 @@ int main()
         cout<<"deque is not empty"<<endl;
     }
 
+    //traversing in deque
+    deque<int>::iterator it = dq.begin();
+    cout<<"deque elements are: ";
+    while(it != dq.end()){
+        cout<<*it<<" ";
+        it++;
+    }
+    cout<<endl;
+
+
 
 
     return 0;
