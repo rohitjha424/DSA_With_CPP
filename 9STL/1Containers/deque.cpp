@@ -23,5 +23,12 @@ int main()
     dq.push_front(3);   //3,2,1,10,20,30,40
     dq.push_front(4);   //4,3,2,1,10,20,30,40
 
+
+    //deletion from back
+    dq.pop_back();  //4,3,2,1,10,20,30
+
+    //deletion on front
+    dq.pop_front(); //3,2,1,10,20,30
+
     return 0;
 }
