@@ -22,6 +22,14 @@ int main()
     q.pop(); //will delete the front element 10 : //20,30,40
     
     cout<<"Queue Size after popping is : "<<q.size()<<endl;  // will print 3
+
+    //empty()
+    if(q.empty()==true){
+        cout<<"Queue is empty"<<endl;
+    }
+    else{
+        cout<<"Queue is not empty"<<endl;
+    }
     
     
 
