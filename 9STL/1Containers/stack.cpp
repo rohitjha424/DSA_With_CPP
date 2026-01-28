@@ -25,8 +25,15 @@ int main()
     cout<<"Stack Size after popping is : "<<st.size()<<endl;  // will print 3
 
     //top() 
-    cout<<"The top element in the stack is: "<<st.top()<<endl;
-
+    cout<<"The top element in the stack is: "<<st.top()<<endl; //will return the top element
+    
+    //empty()
+    if(st.empty()==true){
+        cout<<"Stack is empty"<<endl;
+    }
+    else{
+        cout<<"Stack is not empty"<<endl;
+    }
 
 
 
