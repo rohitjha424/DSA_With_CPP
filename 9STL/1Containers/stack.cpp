@@ -17,6 +17,8 @@ int main()
     st.push(30);  //10,20,30
     st.push(40);  //10,20,30,40
 
+    cout<<"Stack Size is : "<<st.size()<<endl;  // will print stack Size
+
 
 
 
