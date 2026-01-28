@@ -36,6 +36,10 @@ int main()
     //back() and begin()
     cout<<"deque Size is : "<<(dq.back())<<endl;  // will print deqeue last element
     cout<<"deque Size is : "<<*(dq.begin())<<endl;  // will print deqeue front element
+    
+    //Accessing element in deque
+    cout<<"elemet at index 1 of deque  is : "<<dq.at(1)<<endl;  
+    cout<<"elemet at index 1 of deque  is : "<<dq[1]<<endl;  
 
 
 
