@@ -15,6 +15,8 @@ int main()
     q.push(20);  //10,20
     q.push(30);  //10,20,30
     q.push(40);  //10,20,30,40
+
+    cout<<"Queue Size is : "<<q.size()<<endl;  // will print Queue Size
     
     
 
