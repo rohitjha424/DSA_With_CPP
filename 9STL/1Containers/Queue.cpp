@@ -32,9 +32,10 @@ int main()
     }
 
     //front() and back()
-
     cout<<"Queue front element is: "<<q.front()<<endl;
     cout<<"Queue back element is: "<<q.back()<< endl;
+
+
 
     
     
