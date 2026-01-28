@@ -45,14 +45,14 @@ int main()
     // dq.clear(); // it will clear the deque all elements.
     // cout<<"deque Size after clearing is : "<<dq.size()<<endl;  // will print deqeue Size as 0
     
-     //empty()
+    //empty()
     if(dq.empty()==true){
         cout<<"deque is empty"<<endl;
     }
     else{
         cout<<"deque is not empty"<<endl;
     }
-
+    
     //traversing in deque
     deque<int>::iterator it = dq.begin();
     cout<<"deque elements are: ";
@@ -61,6 +61,12 @@ int main()
         it++;
     }
     cout<<endl;
+    
+    //insert()
+    cout<<"deque front element before insert is : "<<*(dq.begin())<<endl; 
+    dq.insert(dq.begin(), 4);  // will insert 4 at front of the deque
+    cout<<"deque front element after insert is : "<<*(dq.begin())<<endl;
+
 
 
 
