@@ -24,6 +24,9 @@ int main()
     
     cout<<"Stack Size after popping is : "<<st.size()<<endl;  // will print 3
 
+    //top() 
+    cout<<"The top element in the stack is: "<<st.top()<<endl;
+
 
 
 
