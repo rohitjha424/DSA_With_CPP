@@ -42,9 +42,16 @@ int main()
     cout<<"elemet at index 1 of deque  is : "<<dq[1]<<endl;  
     
     //clear()
-    dq.clear(); // it will clear the deque all elements.
-    cout<<"deque Size after clearing is : "<<dq.size()<<endl;  // will print deqeue Size as 0
+    // dq.clear(); // it will clear the deque all elements.
+    // cout<<"deque Size after clearing is : "<<dq.size()<<endl;  // will print deqeue Size as 0
     
+     //empty()
+    if(dq.empty()==true){
+        cout<<"deque is empty"<<endl;
+    }
+    else{
+        cout<<"deque is not empty"<<endl;
+    }
 
 
 
