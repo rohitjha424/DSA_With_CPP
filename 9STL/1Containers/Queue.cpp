@@ -36,6 +36,27 @@ int main()
     cout<<"Queue back element is: "<<q.back()<< endl;
 
 
+    //Swap()
+    
+    //queue first
+    queue<int> first;
+    first.push(1);
+    first.push(2);
+    first.push(3);
+    first.push(4);
+    
+    cout<<"New Front of First before Swap is: "<<first.front()<<" New Back of queue frist before Swap: "<<first.back()<<endl;
+    
+    //queue second
+    queue<int> second;
+    second.push(10);
+    second.push(20);
+    second.push(30);
+    second.push(40);
+    
+    first.swap(second);
+
+    cout<<"New Front of First after Swap is: "<<first.front()<<" New Back of queue frist after Swap: "<<first.back()<<endl;
 
     
     
