@@ -50,7 +50,11 @@ int main()
     mh.push(3); 
 
     //top element -> highest priority element >>>min Value
-    cout<<"The top element in pq is: "<<mh.top()<<endl; // will print 1
+    cout<<"The top element in min heap is: "<<mh.top()<<endl; // will print 1
+    
+    //deletion >> pop() will be operated on min element (highest priority)
+    mh.pop(); // 1 will be deleted from the min heap
+    cout<<"The top element in min heap after pop is: "<<mh.top()<<endl; // will print 2
 
 
 
