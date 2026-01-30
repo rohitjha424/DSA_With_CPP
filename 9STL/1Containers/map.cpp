@@ -14,7 +14,8 @@ int main()
     //insertion
     // 1st way 
     table["in"] = "India";
-
+    //2nd way using insert()
+    table.insert(make_pair("en", "England"));
 
     return 0;
 }
