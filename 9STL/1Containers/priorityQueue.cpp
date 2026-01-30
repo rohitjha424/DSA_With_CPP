@@ -43,6 +43,13 @@ int main()
     priority_queue<int, vector<int>, greater<int>> mh;
     //min-heap ->min value ->highest priority
 
+    //insertion in  min-heap
+    mh.push(1);  
+    mh.push(2); 
+    mh.push(4); 
+    mh.push(3); 
+
+
 
 
 
