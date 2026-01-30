@@ -13,11 +13,14 @@ int main()
 
     //insertion of values 
     pq.push(10);  //10
-    pq.push(20);  //20,10
-    pq.push(40);  //40,10,20
-    pq.push(30);  //40,30,20,10
+    pq.push(20);  //20,10 >> max element will be front
+    pq.push(40);  //40,10,20 >> max element will be front 
+    pq.push(30);  //40,30,20,10 >> max element will be front
 
     cout<<"Priorty Queue Size is : "<<pq.size()<<endl;  // will print Priority Queue Size
+
+    //top element -> highest priority element >>>Max Value
+    cout<<"The top element in pq is: "<<pq.top()<<endl; // will print 40 
 
 
 
