@@ -29,6 +29,14 @@ int main()
     table.clear();
     cout<<"Map Size is : "<<table.size()<<endl;  // will print map Size as 0
 
+    //empty()
+    if(table.empty()==true){
+        cout<<"Queue is empty"<<endl;
+    }
+    else{
+        cout<<"Queue is not empty"<<endl;
+    }
+
 
 
 
