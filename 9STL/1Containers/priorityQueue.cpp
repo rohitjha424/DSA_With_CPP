@@ -27,6 +27,14 @@ int main()
 
     cout<<"The top element in pq is: "<<pq.top()<<endl; // will print 30
 
+    //empty()
+    if(pq.empty()==true){
+        cout<<"Queue is empty"<<endl;
+    }
+    else{
+        cout<<"Queue is not empty"<<endl;
+    }
+
 
 
 
