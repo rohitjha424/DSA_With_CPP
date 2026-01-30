@@ -49,6 +49,10 @@ int main()
     mh.push(4); 
     mh.push(3); 
 
+    //top element -> highest priority element >>>min Value
+    cout<<"The top element in pq is: "<<mh.top()<<endl; // will print 1
+
+
 
 
 
