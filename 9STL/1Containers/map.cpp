@@ -31,10 +31,10 @@ int main()
 
     //empty()
     if(table.empty()==true){
-        cout<<"Queue is empty"<<endl;
+        cout<<"map is empty"<<endl;
     }
     else{
-        cout<<"Queue is not empty"<<endl;
+        cout<<"map is not empty"<<endl;
     }
 
 
