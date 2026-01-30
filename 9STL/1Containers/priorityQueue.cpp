@@ -39,6 +39,12 @@ int main()
 
     //***************Min-Heap*************************** */
 
+    //creation
+    priority_queue<int, vector<int>, greater<int>> mh;
+    //min-heap ->min value ->highest priority
+
+
+
 
 
 
