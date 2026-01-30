@@ -16,6 +16,12 @@ int main()
     table["in"] = "India";
     //2nd way using insert()
     table.insert(make_pair("en", "England"));
+    //3rd way: Pair
+    pair<string,string> p;
+    p.first = "br";
+    p.second = "Brazil";
+    table.insert(p);
+
 
     return 0;
 }
