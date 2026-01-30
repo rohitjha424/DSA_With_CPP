@@ -22,7 +22,15 @@ int main()
     p.second = "Brazil";
     table.insert(p);
 
+    //size()
     cout<<"Map Size is : "<<table.size()<<endl;  // will print map Size
+    
+    //clear()
+    table.clear();
+    cout<<"Map Size is : "<<table.size()<<endl;  // will print map Size as 0
+
+
+
 
 
 
