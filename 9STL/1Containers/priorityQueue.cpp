@@ -22,6 +22,9 @@ int main()
     //top element -> highest priority element >>>Max Value
     cout<<"The top element in pq is: "<<pq.top()<<endl; // will print 40 
 
+    //deletion >> pop() will be operated on max element
+    pq.pop(); // 40 will be deleted from the pq
+
 
 
 
