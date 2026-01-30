@@ -25,6 +25,10 @@ int main()
     //deletion >> pop() will be operated on max element
     pq.pop(); // 40 will be deleted from the pq
 
+    cout<<"The top element in pq is: "<<pq.top()<<endl; // will print 30
+
+
+
 
 
 
