@@ -22,6 +22,16 @@ int main()
     p.second = "Brazil";
     table.insert(p);
 
+    // Traversing using iterator
+    unordered_map<string,string>::iterator it = table.begin();
+    cout<<endl<<"map elements are:"<<endl;
+     while (it != table.end())
+    { 
+        pair<string,string> p = *it;
+        cout << p.first << " "<<p.second<<endl;
+        it++;
+    }
+
     //size()
     cout<<"Map Size is : "<<table.size()<<endl;  // will print map Size
     
@@ -36,6 +46,8 @@ int main()
     else{
         cout<<"map is not empty"<<endl;
     }
+
+    
 
 
 
