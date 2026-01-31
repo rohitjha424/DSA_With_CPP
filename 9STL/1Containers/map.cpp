@@ -38,7 +38,7 @@ int main()
     // //clear()
     // table.clear();
     // cout<<"Map Size is : "<<table.size()<<endl;  // will print map Size as 0
-
+    
     //empty()
     if(table.empty()==true){
         cout<<"map is empty"<<endl;
@@ -46,9 +46,11 @@ int main()
     else{
         cout<<"map is not empty"<<endl;
     }
-
+    
     //erase
     table.erase(table.begin(), table.end());
+    cout<<"Map Size after erase is  : "<<table.size()<<endl;  // will print map Size as 0
+
 
     
 
