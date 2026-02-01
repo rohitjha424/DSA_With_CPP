@@ -74,6 +74,34 @@ int main()
     }
 
 
+
+    //////// *********Ordered map **********///
+
+    cout<<"//////****Ordered Map*****///////"<<endl;
+    //map keyword is used for ordered map
+
+    //creation of ordered map
+    map<string,string> oTable;
+
+    //insertion
+    // 1st way 
+    oTable["in"] = "India";
+    //2nd way using insert()
+    oTable.insert(make_pair("en", "England"));
+    oTable.insert(make_pair("br", "Brazil"));
+
+    // Traversing using iterator
+    map<string,string>::iterator it1 = oTable.begin();
+    cout<<endl<<"map elements are:"<<endl;
+     while (it1 != oTable.end())
+    { 
+        pair<string,string> pr = *it1;
+        cout << pr.first << " "<<pr.second<<endl;
+        it1++;
+    }
+
+
+
     
 
 
