@@ -32,6 +32,14 @@ int main()
     st.clear();
     cout<<"set Size is : "<<st.size()<<endl;  // will print set Size as 0
     
+     //empty()
+    if(st.empty()==true){
+        cout<<"set is empty"<<endl;
+    }
+    else{
+        cout<<"set is not empty"<<endl;
+    }
+   
    
     
 
