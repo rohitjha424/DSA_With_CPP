@@ -10,6 +10,11 @@ int main()
     //creation of set
     set<int> st;
 
+    //insertion in set
+    st.insert(10);
+    st.insert(15);
+    st.insert(8);
+    st.insert(4);
 
     return 0;
 }
