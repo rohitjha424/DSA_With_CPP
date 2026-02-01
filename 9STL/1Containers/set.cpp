@@ -16,5 +16,15 @@ int main()
     st.insert(8);
     st.insert(4);
 
+    // Traversing using iterator
+    set<int>::iterator it = st.begin();
+    cout<<endl<<"set elements are:"<<endl;
+     while (it != st.end())
+    { 
+       
+        cout << *it<<" "<<endl;
+        it++;
+    }
+
     return 0;
 }
