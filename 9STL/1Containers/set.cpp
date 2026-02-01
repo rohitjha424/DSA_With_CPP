@@ -21,10 +21,15 @@ int main()
     cout<<endl<<"set elements are:"<<endl;
      while (it != st.end())
     { 
-       
-        cout << *it<<" "<<endl;
+        cout << *it<<" "<<endl;  // will print in ordered set
         it++;
     }
+
+     //size()
+    cout<<"Map Size is : "<<st.size()<<endl;  // will print map Size
+    
+   
+    
 
     return 0;
 }
