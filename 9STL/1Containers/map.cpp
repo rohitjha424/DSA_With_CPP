@@ -65,6 +65,13 @@ int main()
         cout<<"Key not found"<<endl;
     }
 
+    //count()
+    if(table.count("in") ==0){
+        cout<<"Key Found"<<endl;
+    }
+    else{
+        cout<<"Key not found"<<endl;
+    }
 
 
     
