@@ -1,4 +1,5 @@
-// Learning About Map in CPP
+// Learning About Set in CPP
+//stores unique elements only
 
 #include <iostream>
 #include<set>
