@@ -47,12 +47,18 @@ int main()
         cout<<"map is not empty"<<endl;
     }
     
-    //erase
-    table.erase(table.begin(), table.end());
-    cout<<"Map Size after erase is  : "<<table.size()<<endl;  // will print map Size as 0
+    // //erase
+    // table.erase(table.begin(), table.end());
+    // cout<<"Map Size after erase is  : "<<table.size()<<endl;  // will print map Size as 0
 
     //find()
     if(table.find("in") != table.end()){
+        cout<<"Key Found"<<endl;
+    }
+    else{
+        cout<<"Key not found"<<endl;
+    }
+    if(table.find("im") != table.end()){
         cout<<"Key Found"<<endl;
     }
     else{
