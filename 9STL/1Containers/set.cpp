@@ -26,8 +26,10 @@ int main()
     }
 
      //size()
-    cout<<"Map Size is : "<<st.size()<<endl;  // will print map Size
+    cout<<"set Size is : "<<st.size()<<endl;  // will print set Size
     
+
+   
    
     
 
