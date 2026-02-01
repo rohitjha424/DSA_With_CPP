@@ -28,8 +28,10 @@ int main()
      //size()
     cout<<"set Size is : "<<st.size()<<endl;  // will print set Size
     
-
-   
+     //clear()
+    st.clear();
+    cout<<"set Size is : "<<st.size()<<endl;  // will print set Size as 0
+    
    
     
 
