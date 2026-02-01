@@ -7,6 +7,9 @@ using namespace std;
 
 int main()
 {
+    //creation of set
+    set<int> st;
+
 
     return 0;
 }
