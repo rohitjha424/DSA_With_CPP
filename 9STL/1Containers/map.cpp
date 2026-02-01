@@ -100,6 +100,25 @@ int main()
         it1++;
     }
 
+    //creation of ordered map int ,string 
+    map<int,string> newTable;
+
+    //insertion
+  
+    newTable.insert(make_pair(2, "Rohit"));
+    newTable.insert(make_pair(3, "Bharti"));
+    newTable.insert(make_pair(1, "Naira"));
+
+    // Traversing using iterator
+    map<int,string>::iterator it2 = newTable.begin();
+    cout<<endl<<"map elements are:"<<endl;
+     while (it2 != newTable.end())
+    { 
+        pair<int,string> pr = *it2;
+        cout << pr.first << " "<<pr.second<<endl;
+        it2++;
+    }
+
 
 
     
