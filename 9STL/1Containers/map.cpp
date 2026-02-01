@@ -65,12 +65,12 @@ int main()
         cout<<"Key not found"<<endl;
     }
 
-    //count()
-    if(table.count("in") ==0){
-        cout<<"Key Found"<<endl;
+    //count() >>>>>>>>> returns 0 or 1 >> as key is unique so if key found>>1>>no>>0 
+    if(table.count("in") ==0){  //will return 1
+        cout<<"Key not Found"<<endl;
     }
     else{
-        cout<<"Key not found"<<endl;
+        cout<<"Key found"<<endl;
     }
 
 
