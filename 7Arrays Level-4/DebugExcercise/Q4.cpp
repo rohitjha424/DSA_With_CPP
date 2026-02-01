@@ -1,4 +1,8 @@
 //Swap alternate
+// Original Array:
+// 3 9 12 6 32 4
+// the Array after swapping is:
+// 9 3 6 12 4 32
 
 #include <iostream>
 using namespace std;
