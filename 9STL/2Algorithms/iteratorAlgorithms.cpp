@@ -17,9 +17,9 @@ int main(){
     vector<int> arr(5);
     arr[0] = 11;   
     arr[1] = 20;   
-    arr[2] = 30;   
+    arr[2] = 11;   
     arr[3] = 40;   
-    arr[4] = 50;   
+    arr[4] = 11;   
 
     //for_each()
     // for_each(arr.begin(), arr.end(), printDouble); // will take all the elements from begining to end and apply the printDouble() on it.
@@ -32,8 +32,14 @@ int main(){
 
 
     //find_if()
-    auto it = find_if(arr.begin(), arr.end(), checkEven);
-    cout<<*it<<endl; 
+    // auto it = find_if(arr.begin(), arr.end(), checkEven);
+    // cout<<*it<<endl; 
+
+    //count()
+    int target = 11;
+    auto ans = count(arr.begin(), arr.end(), target); // will return the occurance of target element
+    cout<<ans<<endl;
+
 
 
     
