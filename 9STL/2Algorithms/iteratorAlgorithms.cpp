@@ -44,6 +44,12 @@ int main(){
     auto ans = count_if(arr.begin(), arr.end(), checkEven); // will return the occurance criteria (even numbers)
     cout<<ans<<endl;
 
+    //sort()
+    sort(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
+    for(int a: arr){
+        cout<<a<<" ";
+    }
+
 
 
     
