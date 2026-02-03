@@ -47,7 +47,7 @@ int main(){
     //sort()
     sort(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
     for(int a: arr){
-        cout<<a<<" ";
+        cout<<a<<" "; // will print in accessnding order by default
     }
 
 
