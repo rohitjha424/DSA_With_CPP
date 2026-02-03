@@ -36,8 +36,12 @@ int main(){
     // cout<<*it<<endl; 
 
     //count()
-    int target = 11;
-    auto ans = count(arr.begin(), arr.end(), target); // will return the occurance of target element
+    // int target = 11;
+    // auto ans = count(arr.begin(), arr.end(), target); // will return the occurance of target element
+    // cout<<ans<<endl;
+
+    //count_if()
+    auto ans = count_if(arr.begin(), arr.end(), checkEven); // will return the occurance criteria (even numbers)
     cout<<ans<<endl;
 
 
