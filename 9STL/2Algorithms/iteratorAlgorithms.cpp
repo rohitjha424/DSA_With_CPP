@@ -15,12 +15,12 @@ bool checkEven(int a){
 int main(){
 
     vector<int> arr(6);
-    arr[0] = 10;   
-    arr[1] = 20;   
-    arr[2] = 30;   
-    arr[3] = 40;   
-    arr[4] = 50;   
-    arr[5] = 60;   
+    arr[0] = 11;   
+    arr[1] = 11;   
+    arr[2] = 11;   
+    arr[3] = 22;   
+    arr[4] = 22;   
+    arr[5] = 33;   
 
     //for_each()
     // for_each(arr.begin(), arr.end(), printDouble); // will take all the elements from begining to end and apply the printDouble() on it.
@@ -59,10 +59,20 @@ int main(){
     // }
 
     //roatate
-    rotate(arr.begin(), arr.begin()+3, arr.end());
+    // rotate(arr.begin(), arr.begin()+3, arr.end());
+    // for(int a: arr){
+    //     cout<<a<<" "; // will print roatte by 3 elements 
+    // }
+
+    //unique >>> remove duplicate elements from a sorted range
+    auto it = unique(arr.begin(), arr.end());
+    //it iterator k pehle sare unique elements hain 
+    //it k bad sare duplicate hai. to usse erase kr rhe hain
+    arr.erase(it,arr.end());
     for(int a: arr){
         cout<<a<<" "; // will print roatte by 3 elements 
     }
+
 
 
 
