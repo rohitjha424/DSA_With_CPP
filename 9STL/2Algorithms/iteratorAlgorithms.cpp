@@ -50,6 +50,12 @@ int main(){
         cout<<a<<" "; // will print in accessnding order by default
     }
 
+    cout<<endl;
+    //reverse
+     reverse(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
+    for(int a: arr){
+        cout<<a<<" "; // will print in accessnding order by default
+    }
 
 
     
