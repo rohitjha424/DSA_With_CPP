@@ -14,12 +14,13 @@ bool checkEven(int a){
 
 int main(){
 
-    vector<int> arr(5);
-    arr[0] = 11;   
+    vector<int> arr(6);
+    arr[0] = 10;   
     arr[1] = 20;   
-    arr[2] = 11;   
+    arr[2] = 30;   
     arr[3] = 40;   
-    arr[4] = 11;   
+    arr[4] = 50;   
+    arr[5] = 60;   
 
     //for_each()
     // for_each(arr.begin(), arr.end(), printDouble); // will take all the elements from begining to end and apply the printDouble() on it.
@@ -41,21 +42,29 @@ int main(){
     // cout<<ans<<endl;
 
     //count_if()
-    auto ans = count_if(arr.begin(), arr.end(), checkEven); // will return the occurance criteria (even numbers)
-    cout<<ans<<endl;
+    // auto ans = count_if(arr.begin(), arr.end(), checkEven); // will return the occurance criteria (even numbers)
+    // cout<<ans<<endl;
 
-    //sort()
-    sort(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
+    // //sort()
+    // sort(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
+    // for(int a: arr){
+    //     cout<<a<<" "; // will print in accessnding order by default
+    // }
+
+    // cout<<endl;
+    // //reverse
+    //  reverse(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
+    // for(int a: arr){
+    //     cout<<a<<" "; // will print in accessnding order by default
+    // }
+
+    //roatate
+    rotate(arr.begin(), arr.begin()+3, arr.end());
     for(int a: arr){
-        cout<<a<<" "; // will print in accessnding order by default
+        cout<<a<<" "; // will print roatte by 3 elements 
     }
 
-    cout<<endl;
-    //reverse
-     reverse(arr.begin(), arr.end()); // will return the occurance criteria (even numbers)
-    for(int a: arr){
-        cout<<a<<" "; // will print in accessnding order by default
-    }
+
 
 
     
