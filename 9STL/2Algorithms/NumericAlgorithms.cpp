@@ -39,6 +39,14 @@ int main(){
     for(int a: resultParcialSum){ // as array is 1, 2, 3, 4 >> will print >>
         cout<<a<<" ";  // 1>>1+2>>3, 1+2+3 >>6, 1+2+3+4>>10
     }
+    cout<<endl;
+
+    //iota >> will fill the values in vector in incrementig order
+    vector<int> iotaExample(5);
+    iota(iotaExample.begin(), iotaExample.end(), 200); // will fill value as 200, 201,202....
+    for(int a: iotaExample){  
+        cout<<a<<" ";  // will print 200, 201, 202, 203,204
+    }
 
 
 
