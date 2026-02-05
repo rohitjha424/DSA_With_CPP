@@ -72,8 +72,13 @@ int main(){
     // for(int a: arr){
     //     cout<<a<<" "; // will print roatte by 3 elements 
     // }
+
+
     //partition
     partition(arr.begin(), arr.end(), checkEven);
+    for(int a: arr){
+        cout<<a<<" "; // will print even number first and then odd numbers >>> partition made
+    }
 
 
 
