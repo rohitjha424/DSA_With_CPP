@@ -29,6 +29,7 @@ int main(){
     second.push_back(5);
 
    int inner_pro=  inner_product(first.begin(), first.end(), second.begin(), 0);
+   //inner product >> first[0]*second[0] + first[1]*second[1]+first[2]*second[2]
    cout<<inner_pro<<endl;
 
 
