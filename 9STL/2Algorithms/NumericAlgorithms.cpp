@@ -17,6 +17,22 @@ int main(){
     int totalSum = accumulate(arr.begin(), arr.end(), 0); // will sum from start to end each vector, sum initialized with 0
     cout<<totalSum<<endl; // will print the sum of all elements in the vector
 
+    //inner_product()
+    vector<int> first;
+    first.push_back(1);
+    first.push_back(2);
+    first.push_back(3);
+
+    vector<int> second;
+    second.push_back(3);
+    second.push_back(4);
+    second.push_back(5);
+
+   int inner_pro=  inner_product(first.begin(), first.end(), second.begin(), 0);
+   cout<<inner_pro<<endl;
+
+
+
 
 
 
