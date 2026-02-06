@@ -34,6 +34,10 @@ int main()
     auto it = min_element(arr.begin(), arr.end());
     cout << *it<<endl;
 
+    //max_element >> wll print maximum element from the container
+    auto it2 = max_element(arr.begin(), arr.end());
+    cout << *it2<<endl;
+
 
 
     return 0;
