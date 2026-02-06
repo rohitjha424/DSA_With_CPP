@@ -18,14 +18,23 @@ int main()
     second.push_back(5);
     second.push_back(6);
 
-    vector<int> unionResult;
-
+    
     //set_union >> will return the union of two sets >> will remove the duplicates
-
+    vector<int> unionResult;
+    
     set_union(first.begin(),first.end(), second.begin(), second.end(), inserter(unionResult, unionResult.begin()));
     cout<<"union set is:"<<endl;
     for(int a: unionResult){
         cout<<a<<" ";   // will print : 1 2 3 4 5 6
+    }cout<<endl;
+    
+
+    //set_intersection >>will print common elements
+    vector<int> intersectionResult;
+    set_intersection(first.begin(),first.end(), second.begin(), second.end(), inserter(intersectionResult, intersectionResult.begin()));
+    cout<<"intersection set is:"<<endl;
+    for(int a: intersectionResult){
+        cout<<a<<" ";   // will print : 3 4
     }cout<<endl;
 
 
