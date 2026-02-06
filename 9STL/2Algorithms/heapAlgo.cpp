@@ -31,9 +31,31 @@ int main()
     //>> we need to use the push_heap()>> to push without breaking the heap property
     arr.push_back(99); // pushing a number
     push_heap(arr.begin(), arr.end()); // will maintain order of heap 
+    // for(int a: arr){
+    //     cout<<a<<" ";   // will print : 99 66 77 22 11 55 >> it broke heap property
+    // }cout<<endl;
+    
+    
+    //deletion
+    cout<<"heap before deletion:"<<endl;
     for(int a: arr){
         cout<<a<<" ";   // will print : 99 66 77 22 11 55 >> it broke heap property
     }cout<<endl;
+    
+    
+    pop_heap(arr.begin(), arr.end());
+    cout<<"heap after pop_heap():"<<endl;
+    for(int a: arr){
+        cout<<a<<" ";   // will print : 77 66 55 22 11 99 >> the pop element(99) shifted to last
+    }cout<<endl;
+    
+    //we need to remove that element from vector
+    arr.pop_back();
+    cout<<"heap after pop_back():"<<endl;
+    for(int a: arr){
+        cout<<a<<" ";   // will print : 77 66 55 22 11 >> heap maintained after pop
+    }cout<<endl;
+
     
 
     return 0;
