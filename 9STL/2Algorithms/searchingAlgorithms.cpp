@@ -23,6 +23,10 @@ int main(){
     //if target is 35 >> 35 is not as element >> will return just greater which is 40.
     auto it1 =  lower_bound(arr.begin(),arr.end(),35);
     cout<<*it1<<endl; // will return 40
+    
+    //upper_bound >>  find the first element greater to a value in a sorted range
+    auto it2 = upper_bound(arr.begin(), arr.end(), 40);
+    cout<<*it2<<endl; // will return greater than the target >> 50
 
 
 return 0;
