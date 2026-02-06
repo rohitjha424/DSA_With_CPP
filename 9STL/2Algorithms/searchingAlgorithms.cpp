@@ -19,6 +19,11 @@ int main(){
     auto it = binary_search(arr.begin(), arr.end(), target); // will return boolean if target found 
     cout<<it<<endl; // will return 1
 
+    //lower_bound >> find the first element greater or equal to a value in a sorted range
+    //if target is 35 >> 35 is not as element >> will return just greater which is 40.
+    auto it1 =  lower_bound(arr.begin(),arr.end(),35);
+    cout<<*it1<<endl; // will return 40
+
 
 return 0;
 }
