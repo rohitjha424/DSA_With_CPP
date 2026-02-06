@@ -36,6 +36,17 @@ int main()
     for(int a: intersectionResult){
         cout<<a<<" ";   // will print : 3 4
     }cout<<endl;
+    
+    //set_difference >> v1-v2 >> will minus the same element 
+    vector<int> differenceResult;
+    set_difference(first.begin(),first.end(), second.begin(), second.end(), inserter(differenceResult, differenceResult.begin()));
+    cout<<"intersection set is:"<<endl;
+    for(int a: differenceResult){
+        cout<<a<<" ";   // will print : 1 2
+    }cout<<endl;
+
+
+
 
 
     return 0;
