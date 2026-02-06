@@ -40,9 +40,18 @@ int main()
     //set_difference >> v1-v2 >> will minus the same element 
     vector<int> differenceResult;
     set_difference(first.begin(),first.end(), second.begin(), second.end(), inserter(differenceResult, differenceResult.begin()));
-    cout<<"intersection set is:"<<endl;
+    cout<<"set difference result is:"<<endl;
     for(int a: differenceResult){
         cout<<a<<" ";   // will print : 1 2
+    }cout<<endl;
+    
+    
+    //set_symmetric_difference() >> will cancle same elements and print the result union
+    vector<int> symDifferenceResult;
+    set_symmetric_difference(first.begin(),first.end(), second.begin(), second.end(), inserter(symDifferenceResult, symDifferenceResult.begin()));
+    cout<<"set symmetric differenc is:"<<endl;
+    for(int a: symDifferenceResult){
+        cout<<a<<" ";   // will print :1 2 5 6
     }cout<<endl;
 
 
