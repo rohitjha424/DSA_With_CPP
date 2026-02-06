@@ -51,9 +51,12 @@ int main()
     
     //we need to remove that element from vector
     arr.pop_back();
-    cout<<"heap after pop_back():"<<endl;
+    
+    //heap_sort()
+    sort_heap(arr.begin(), arr.end());
+    cout<<"heap after sorting:"<<endl;
     for(int a: arr){
-        cout<<a<<" ";   // will print : 77 66 55 22 11 >> heap maintained after pop
+        cout<<a<<" ";   // will print : 11 22 55 66 77  >> will print in sorted order
     }cout<<endl;
 
     
