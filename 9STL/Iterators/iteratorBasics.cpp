@@ -34,6 +34,13 @@ int main(){
     forward_list<int>::iterator it = fl.begin();
 
     while(it != fl.end()){
+        (*it) = (*it) +5; // will add 5 to each element
+        it++;
+    }
+    cout<<endl;
+
+    it = fl.begin();
+    while(it != fl.end()){
         cout<<*it<<" ";
         it++;
     }
