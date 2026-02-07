@@ -64,6 +64,14 @@ int main(){
         it++;
     }cout<<endl;
 
+     //backward traversing 
+   list<int>::iterator it1 = l.end();
+   while(it1 != l.begin()){
+       it1--;
+        cout<<*it1<<" ";
+    } cout<<endl;
+
+
    
 
 
