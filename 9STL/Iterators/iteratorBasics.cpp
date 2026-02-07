@@ -78,6 +78,21 @@ int main(){
     vec.push_back(30);
     vec.push_back(40);
 
+    vector<int>::iterator it2 = vec.begin();
+
+
+    //write operation 
+    while(it2 != vec.end()){
+        *it2 = *it2 +7;
+        it2++;
+    }
+    //read operation
+    it2 = vec.begin(); 
+    while(it2 != vec.end()){
+       cout<<*it2<<" ";
+        it2++;
+    } cout<<endl;
+
 
    
 
