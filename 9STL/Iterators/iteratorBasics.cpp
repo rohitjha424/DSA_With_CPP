@@ -71,6 +71,13 @@ int main(){
         cout<<*it1<<" ";
     } cout<<endl;
 
+    //random access iterator
+    vector<int> vec;
+    vec.push_back(10);
+    vec.push_back(20);
+    vec.push_back(30);
+    vec.push_back(40);
+
 
    
 
