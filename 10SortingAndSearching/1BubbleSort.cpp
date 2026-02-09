@@ -2,11 +2,13 @@
 // time complexity >> O(n square)
 
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
-void bubbleSort(int arr[], int size)
+void bubbleSort(vector<int> &arr)
 {
-
+    int size = arr.size();
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
@@ -18,9 +20,9 @@ void bubbleSort(int arr[], int size)
         }
     }
 }
-void bubbleSortDecOrder(int arr[], int size)
+void bubbleSortDecOrder(vector<int> &arr)
 {
-
+    int size = arr.size();
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
@@ -33,11 +35,9 @@ void bubbleSortDecOrder(int arr[], int size)
     }
 }
 
-
 int main()
 {
-    int arr[] = {4, 6, 7, 2, 8};
-    int size = 5;
+    vector<int> arr = {4, 6, 7, 2, 8};
 
     cout << "Before Sorting: " << endl;
     for (int a : arr)
@@ -46,7 +46,7 @@ int main()
     }
     cout << endl;
 
-    bubbleSort(arr, size);
+    bubbleSort(arr);
 
     cout << "After Sorting: " << endl;
     for (int a : arr)
@@ -55,7 +55,7 @@ int main()
     }
     cout << endl;
 
-    bubbleSortDecOrder(arr, size);
+    bubbleSortDecOrder(arr);
 
     cout << "After Dec order Sorting: " << endl;
     for (int a : arr)
