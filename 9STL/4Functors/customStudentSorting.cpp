@@ -21,7 +21,8 @@ class Student{
 class comparator{
     public:
     bool operator()(Student a, Student b){
-        return a.marks <b.marks; // comapring based on mark, when a < b >> maintaining ascending order
+        // return a.marks <b.marks; // comapring based on mark, when a < b >> maintaining ascending order
+        return a.marks >b.marks; // comapring based on mark, when a > b >> maintaining descending order
     }
 };
 
