@@ -1,49 +1,55 @@
-//Custom Sorting Example
-#include<iostream>
-#include<vector>
-#include<algorithm>
+// Custom Sorting Example
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
-class Student{
-    public:
+class Student
+{
+public:
     int marks;
     string name;
-    Student(){
-
+    Student()
+    {
     }
 
-    Student(int m, string n){
-       this->marks = m;
-       this->name = n;
+    Student(int m, string n)
+    {
+        this->marks = m;
+        this->name = n;
     }
 };
 
-class comparator{
-    public:
-    bool operator()(Student a, Student b){
+class comparator
+{
+public:
+    bool operator()(Student a, Student b)
+    {
         // return a.marks <b.marks; // comapring based on mark, when a < b >> maintaining ascending order
-        //if marks equal then 
-        if(a.marks == b.marks){
-            return a.name<b.name; // will sort based on name then
+        // if marks equal then
+        if (a.marks == b.marks)
+        {
+            return a.name < b.name; // will sort based on name then
         }
-        return a.marks >b.marks; // comapring based on mark, when a > b >> maintaining descending order
+        return a.marks > b.marks; // comapring based on mark, when a > b >> maintaining descending order
     }
 };
 
-
-int main(){
-
+int main()
+{
 
     vector<Student> arr;
-    arr.push_back(Student(90,"Ruchika"));
-    arr.push_back(Student(85,"Naveen"));
-    arr.push_back(Student(95,"Kunal"));
+    arr.push_back(Student(90, "Ruchika"));
+    arr.push_back(Student(85, "Naveen"));
+    arr.push_back(Student(95, "Kunal"));
 
-     sort(arr.begin(), arr.end(), comparator());
+    sort(arr.begin(), arr.end(), comparator());
 
-     for(Student a : arr){
-        cout<<a.marks<<" "<<a.name<<endl;
-    }cout <<endl;
+    for (Student a : arr)
+    {
+        cout << a.marks << " " << a.name << endl;
+    }
+    cout << endl;
 
     return 0;
 }
