@@ -2,28 +2,25 @@
 
 #include <iostream>
 #include <vector>
-#include <climits>
 
 using namespace std;
 
 void selectionSort(vector<int> &arr)
 {
     int size = arr.size();
-    //finding min element
-    
+
     for (int i = 0; i < size-1; i++)
     {
-       
-           int minIndex = i;
-        
-
+        //making first element set as minumum element index which is unsorted yet
+        int minIndex = i;
+        // loop to check if any element is less than the first element 
         for(int j =i+1; j<size; j++){
             if(arr[j]<arr[minIndex]){
-                minIndex = j;
+                minIndex = j; // if found then make it as new min index
             }
         }
+        // swap newly found min element Index with the 1st element of unsorted elementes (arr[i]) 
         swap(arr[i], arr[minIndex]);
-            
     }
 
 }
