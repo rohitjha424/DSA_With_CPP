@@ -22,10 +22,10 @@ void selectionSort(vector<int> &arr)
                 minIndex = j;
             }
         }
-       
-        
+        swap(arr[i], arr[minIndex]);
+            
     }
-    cout<< "Min is "<<min<<endl;
+
 }
 
 int main()
