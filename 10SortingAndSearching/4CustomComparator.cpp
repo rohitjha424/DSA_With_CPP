@@ -17,6 +17,9 @@ void print(vector<int> &arr){
 bool myComp(int&a, int&b){
     return a<b;
 }
+bool myCompDec(int&a, int&b){
+    return a>b;
+}
 
 int main(){
      vector<int> arr = {5, 4, 2, 7, 9, 6};
@@ -29,6 +32,8 @@ int main(){
     cout << endl;
 
     sort(arr.begin(), arr.end(), myComp);
+    print(arr);
+    sort(arr.begin(), arr.end(), myCompDec);
     print(arr);
     
     return 0;
