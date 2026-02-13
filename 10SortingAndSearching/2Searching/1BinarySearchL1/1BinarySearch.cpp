@@ -9,7 +9,7 @@ void binarySearch(vector<int> &arr, int target)
 {
     int start = 0;
     int end = arr.size() - 1;
-    int mid = (start + end) / 2;
+    int mid = start + (end-start)/2;
     for (int i = 0; i < arr.size(); i++)
     {
         if (arr[mid] == target)
