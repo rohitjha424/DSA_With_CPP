@@ -6,9 +6,10 @@ using namespace std;
 
 void findMissingElement(vector<int> &arr)
 {
+    int size = arr.size();
     int start = 0;
-    int end = arr.size() - 1;
-    int missing;
+    int end = size - 1;
+    int missing = size; // to handle to inclusive case of last number
     while (start <= end)
     {
         int mid = start + (end - start) / 2;
@@ -32,7 +33,7 @@ void findMissingElement(vector<int> &arr)
 
 int main()
 {
-    vector<int> arr = {0, 1, 2, 4, 5, 6, 7};
+    vector<int> arr = {0, 1};
     // observation:  for 0 to n >> index will map to exat values >> 0,1,2,3,4,5,6,7>> index is same >>0,2,3,4,5,6,7
 
     //>> Hence we will apply the Binary search logic >>mid element should map with mid index.
