@@ -6,13 +6,36 @@
 #include <vector>
 using namespace std;
 
+// void findPeakIndexMoutainArray(vector<int> &arr)
+// {
+//     int size = arr.size();
+//     int start = 0;
+//     int end = size - 1;
+//     int peak = -1;
+//     while (start <= end)
+//     {
+//         int mid = start + (end - start) / 2;
+//         if (arr[mid] < arr[mid + 1])
+//         {
+//             start = mid + 1;
+//         }
+//         else
+//         {
+//             peak = mid;
+//             end = mid - 1;
+//         }
+//     }
+//     cout << "Peak Element Index is: " << peak <<" And Peak Element is: "<<arr[peak]<< endl;
+// }
+
+//2nd Approch of Solving 
 void findPeakIndexMoutainArray(vector<int> &arr)
 {
     int size = arr.size();
     int start = 0;
     int end = size - 1;
     int peak = -1;
-    while (start <= end)
+    while (start < end)
     {
         int mid = start + (end - start) / 2;
         if (arr[mid] < arr[mid + 1])
@@ -21,11 +44,10 @@ void findPeakIndexMoutainArray(vector<int> &arr)
         }
         else
         {
-            peak = mid;
-            end = mid - 1;
+            end = mid ;
         }
     }
-    cout << "Peak Element Index is: " << peak <<" And Peak Element is: "<<arr[peak]<< endl;
+    cout << "Peak Element Index is: " << end <<" And Peak Element is: "<<arr[end]<< endl;
 }
 
 int main()
