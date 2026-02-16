@@ -14,9 +14,18 @@ void findPeakIndexMoutainArray(vector<int> &arr)
     int peak = -1;
     while (start <= end)
     {
-   
+        int mid = start + (end - start) / 2;
+        if (arr[mid] < arr[mid + 1])
+        {
+            start = mid + 1;
+        }
+        else
+        {
+            peak = mid;
+            end = mid - 1;
+        }
     }
-    cout << "Peak Element is: " << peak << endl;
+    cout << "Peak Element Index is: " << peak <<" And Peak Element is: "<<arr[peak]<< endl;
 }
 
 int main()
