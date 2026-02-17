@@ -11,5 +11,10 @@ int main(){
     //character Array Output in one line :
     cout <<"your Inout is: "<<arr<<endl;
 
+    //printing using loop
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<arr[i]<<" "<<endl;
+    }
     return 0;
 }
