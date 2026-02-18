@@ -18,9 +18,12 @@ int main(){
     // }
 
     // cin will neglect input after space 
-    char arr2[5];
-    cin>>arr2; // input given : rohit jha
-    cout<<arr2; // will print only :  rohit 
+    // char arr2[5];
+    // cin>>arr2; // input given : rohit jha
+    // cout<<arr2; // will print only :  rohit 
+
+    //initialization
+    char arr[10] = "love"; // multiple character with double quotes
 
     return 0;
 }
