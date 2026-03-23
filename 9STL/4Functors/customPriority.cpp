@@ -42,8 +42,6 @@ int main(){
     cout<<pq.top().marks <<" "<< pq.top().name <<endl; // will print the top element with lowest marks  
 
 
-
-
     // for(Student a : arr){
     //     cout<<a.marks<<" "<<a.name<<endl;
     // }cout <<endl;
@@ -54,11 +52,6 @@ int main(){
 
     // //min-heap >> top element always min
     // priority_queue <int, vector<int>, greater<int>> pq2; //>> greater comparator for min heap 
-
-
-
-
-
 
 
     return 0;
