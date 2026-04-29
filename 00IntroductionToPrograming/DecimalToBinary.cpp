@@ -1,3 +1,5 @@
+//Program for Decimal to Binary Conversion
+
 #include <iostream>
 #include <cmath>
 using namespace std;
