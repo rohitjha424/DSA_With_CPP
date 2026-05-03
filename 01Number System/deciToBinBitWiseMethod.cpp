@@ -1,3 +1,5 @@
+//Decimal to Binary by bitwise
+
 #include <iostream>
 using namespace std;
 
