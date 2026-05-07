@@ -1,4 +1,4 @@
-// Find GCD of Given two Numbers.
+// Find Greatest common Divisor of Given two Numbers.
 
 #include <iostream>
 using namespace std;
