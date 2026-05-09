@@ -1,7 +1,8 @@
+// Print 1 to 10 using foor loop.
+
 #include <iostream>
 using namespace std;
 
-// Print 1 to 10 using foor loop.
 int main()
 {
 
