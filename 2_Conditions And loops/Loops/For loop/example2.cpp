@@ -1,7 +1,8 @@
+// print your name 11 times using for loop
+
 #include <iostream>
 using namespace std;
 
-// print your name 11 times using for loop
 int main()
 {
     for (int i = 0; i <= 10; i++)
