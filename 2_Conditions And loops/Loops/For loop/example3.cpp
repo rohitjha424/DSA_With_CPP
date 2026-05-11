@@ -1,7 +1,8 @@
+// print 19th Table using foor loop.
+
 #include <iostream>
 using namespace std;
 
-// print 19th Table using foor loop.
 int main()
 {
 
